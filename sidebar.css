@@ -1,0 +1,174 @@
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    border-right: 1px solid #e9ecef;
+    padding: 2rem 1.5rem;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.profile-photo {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #0047AB;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #212529;
+    text-align: center;
+}
+
+.affiliation-logo {
+    width: 200px;
+    height: auto;
+    opacity: 0.95;
+}
+
+.sidebar-title {
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #0047AB;
+    margin-bottom: 0.25rem;
+}
+
+.sidebar-affiliation {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.sidebar-separator {
+    width: 78%;
+    height: 3px;
+    background-color: #0047AB;
+    margin: 1.5rem 0;
+    border: none;
+    display: block;
+}
+
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar-links li {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.75rem;
+    color: #495057;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.sidebar-link:hover {
+    background-color: #e9ecef;
+    color: #0047AB;
+    transform: translateX(2px);
+}
+
+.sidebar-link i {
+    width: 20px;
+    margin-right: 0.75rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.sidebar-link.email i { color: #0047AB; }
+.sidebar-link.scholar i { color: #0047AB; }
+.sidebar-link.linkedin i { color: #0047AB; }
+.sidebar-link.twitter i { color: #0047AB; }
+.sidebar-link.bluesky i { color: #0047AB; }
+.sidebar-link.github i { color: #0047AB; }
+.sidebar-link.cv i { color: #0047AB; }
+
+/* Main content adjustment */
+.main-content {
+    margin-left: 300px;
+    margin-right: 50px;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .sidebar.open {
+        transform: translateX(0);
+    }
+    
+    .main-content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 1001;
+        background-color: #0047AB;
+        color: white;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+/* Overlay for mobile */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.sidebar-overlay.active {
+    display: block;
+}

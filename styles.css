@@ -1,0 +1,1064 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Import sidebar styles */
+@import url('sidebar.css');
+
+:root {
+    /* Cobalt Blue Color Palette */
+    --primary-blue: #0047AB;
+    --secondary-blue: #1E3A8A;
+    --light-blue: #3B82F6;
+    --accent-blue: #60A5FA;
+    --dark-blue: #1E40AF;
+    --very-light-blue: #EBF8FF;
+    
+    /* Neutral Colors */
+    --white: #FFFFFF;
+    --gray-50: #F9FAFB;
+    --gray-100: #F3F4F6;
+    --gray-200: #E5E7EB;
+    --gray-300: #D1D5DB;
+    --gray-400: #9CA3AF;
+    --gray-500: #6B7280;
+    --gray-600: #4B5563;
+    --gray-700: #374151;
+    --gray-800: #1F2937;
+    --gray-900: #111827;
+    
+    /* Typography */
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    
+    /* Spacing */
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 0.75rem;
+    --spacing-4: 1rem;
+    --spacing-5: 1.25rem;
+    --spacing-6: 1.5rem;
+    --spacing-8: 2rem;
+    --spacing-10: 2.5rem;
+    --spacing-12: 3rem;
+    --spacing-16: 4rem;
+    --spacing-20: 5rem;
+    
+    /* Border Radius */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--gray-800);
+    background-color: var(--white);
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--gray-200);
+    position: fixed;
+    top: 0;
+    left: 250px;
+    right: 0;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-4) 0;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+}
+
+.ucdavis-logo {
+    height: 40px;
+    width: auto;
+}
+
+.site-title {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin: 0;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-8);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--gray-600);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--primary-blue);
+}
+
+.nav-link.active {
+    color: var(--primary-blue);
+    font-weight: 800;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--primary-blue);
+    border-radius: 1px;
+}
+
+/* Main Content */
+.main {
+    padding: var(--spacing-20) 0 var(--spacing-4) 0;
+    margin-top: 20px;
+    flex: 1;
+}
+
+/* Main content wrapper for sidebar layout */
+.main-content {
+    margin-left: 300px;
+    margin-right: 100px;
+    min-height: calc(100vh - 80px);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Adjust container for sidebar layout */
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+}
+
+/* Hero Section */
+.hero {
+    margin-bottom: var(--spacing-20);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-16);
+    align-items: center;
+}
+
+.hero-title {
+    font-size: var(--font-size-4xl);
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-2);
+}
+
+.hero-subtitle {
+    font-size: var(--font-size-xl);
+    color: var(--primary-blue);
+    font-weight: 600;
+    margin-bottom: var(--spacing-6);
+}
+
+.hero-description {
+    font-size: var(--font-size-lg);
+    color: var(--gray-600);
+    margin-bottom: var(--spacing-8);
+    line-height: 1.7;
+}
+
+.hero-links {
+    display: flex;
+    gap: var(--spacing-4);
+    flex-wrap: wrap;
+}
+
+.hero-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-3) var(--spacing-4);
+    background-color: var(--primary-blue);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    font-size: var(--font-size-sm);
+    transition: all 0.2s ease;
+}
+
+.hero-link:hover {
+    background-color: var(--secondary-blue);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Section Styles */
+.section-title {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-6);
+    text-align: left;
+}
+
+/* About Section */
+.about {
+    margin-bottom: var(--spacing-16);
+}
+
+.about-text {
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    color: var(--gray-700);
+    margin-bottom: var(--spacing-4);
+}
+
+/* Updates Section */
+.updates {
+    margin-bottom: var(--spacing-16);
+}
+
+.updates-list {
+    max-width: 100%;
+}
+
+.update-item {
+    display: flex;
+    gap: var(--spacing-6);
+    padding: var(--spacing-3) 0;
+    margin-top: var(--spacing-2);
+    margin-bottom: var(--spacing-2);
+    position: relative;
+    align-items: center;
+}
+
+.update-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 125px;
+    height: 1px;
+    background-color: var(--gray-200);
+}
+
+.update-date {
+    font-weight: 700;
+    color: var(--gray-700);
+    font-size: var(--font-size-base);
+    font-size: bold;
+    min-width: 100px;
+    flex-shrink: 0;
+}
+
+.update-content {
+    flex: 1;
+    color: var(--gray-700);
+    line-height: 1.5;
+}
+
+.update-link {
+    color: var(--gray-700);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--primary-blue);
+    text-decoration-thickness: 3px;
+}
+
+.update-link:hover {
+    color: var(--primary-blue);
+}
+
+/* Research Interests */
+.research-interests {
+    margin-bottom: var(--spacing-20);
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-6);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.interest-card {
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-8);
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.interest-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+    border-color: var(--primary-blue);
+}
+
+.interest-card i {
+    font-size: var(--font-size-4xl);
+    color: var(--primary-blue);
+    margin-bottom: var(--spacing-4);
+}
+
+.interest-card h4 {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-3);
+}
+
+.interest-card p {
+    color: var(--gray-600);
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--white);
+    color: var(--gray-500);
+    padding: var(--spacing-4) 0;
+    margin-right: 0;
+    margin-top: var(--spacing-20);
+    width: calc(100% - 30px);
+    border-top: 1px solid var(--gray-200);
+    position: relative;
+    min-height: 60px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+}
+
+.footer-links {
+    display: flex;
+    gap: var(--spacing-6);
+}
+
+.footer-links a {
+    color: var(--gray-300);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        left: 0;
+        right: 0;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: var(--spacing-4);
+    }
+    
+    .nav-list {
+        gap: var(--spacing-4);
+    }
+    
+    .main-content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .footer {
+        margin-left: 0;
+    }
+    
+    .update-item {
+        flex-direction: column;
+        gap: var(--spacing-2);
+        align-items: flex-start;
+    }
+    
+    .update-date {
+        min-width: auto;
+    }
+    
+    .publication-venue {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-2);
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: var(--spacing-4);
+        text-align: center;
+    }
+}
+
+/* Publications Page Styles */
+.page-header {
+    text-align: center;
+    margin-bottom: var(--spacing-16);
+}
+
+.page-title {
+    font-size: var(--font-size-4xl);
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-4);
+}
+
+.page-subtitle {
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin: 0 0 var(--spacing-6) 0;
+    font-style: italic;
+    padding-left: var(--spacing-4);
+    border-left: 3px solid var(--primary-blue);
+}
+
+/* Awards Section */
+.awards-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.award-item {
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-6);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-6);
+}
+
+.award-item:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-blue);
+}
+
+.award-badge {
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    color: var(--white);
+    padding: var(--spacing-4);
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-2);
+    min-width: 150px;
+    text-align: center;
+}
+
+.award-badge i {
+    font-size: var(--font-size-2xl);
+}
+
+.award-badge span {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+}
+
+.award-details {
+    flex: 1;
+}
+
+.award-details strong {
+    color: var(--gray-900);
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    display: block;
+    margin-bottom: var(--spacing-2);
+}
+
+.award-details p {
+    color: var(--gray-600);
+    margin-bottom: var(--spacing-3);
+    line-height: 1.6;
+}
+
+.award-link {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: var(--font-size-sm);
+    transition: color 0.2s ease;
+}
+
+.award-link:hover {
+    color: var(--secondary-blue);
+    text-decoration: underline;
+}
+
+/* Recognition Page Styles - Using service layout */
+.recognition-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--spacing-2);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-1);
+    margin-top: var(--spacing-1);
+}
+
+.recognition-year {
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-2);
+    background: var(--white);
+    color: var(--gray-700);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    border: 1px solid var(--gray-700);
+    min-width: 60px;
+    text-align: center;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+}
+
+.recognition-year:hover {
+    background: var(--primary-blue);
+    color: var(--white);
+    border-color: var(--primary-blue);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 71, 171, 0.3);
+}
+
+.recognition-text {
+    font-size: var(--font-size-base);
+    color: var(--gray-700);
+    line-height: 1.5;
+}
+
+.recognition-text strong {
+    font-weight: 600;
+    color: var(--gray-900);
+}
+
+.recognition-text em {
+    font-style: italic;
+    color: var(--gray-600);
+}
+
+.recognition-amount {
+    display: inline-block;
+    background: var(--primary-blue);
+    color: var(--white);
+    padding: 2px 6px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* Media Coverage Styles */
+.media-entry {
+    display: flex;
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-1);
+    margin-top: var(--spacing-1);
+}
+
+.media-date {
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-2);
+    background: var(--white);
+    color: var(--gray-800);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    border: 1px solid var(--gray-800);
+    min-width: 80px;
+    text-align: center;
+    flex-shrink: 0;
+    align-self: flex-start;
+    height: fit-content;
+}
+
+.media-content {
+    flex: 1;
+}
+
+.media-title {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-1);
+    line-height: 1.4;
+}
+
+.media-source {
+    font-size: var(--font-size-base);
+    color: var(--gray-700);
+    line-height: 1.5;
+    margin-bottom: var(--spacing-1);
+}
+
+.media-source em {
+    font-style: italic;
+    color: var(--gray-600);
+}
+
+.media-link {
+    color: var(--gray-700);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--primary-blue);
+    text-decoration-thickness: 3px;
+}
+
+.media-link:hover {
+    color: var(--primary-blue);
+}
+
+/* Students Page Styles */
+.students-section {
+    margin-bottom: var(--spacing-16);
+}
+
+.students-section:first-of-type {
+    margin-top: var(--spacing-6);
+}
+
+.student-entry {
+    margin-bottom: var(--spacing-4);
+}
+
+.student-entry:last-child {
+    border-bottom: none;
+}
+
+.student-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--spacing-2);
+    line-height: 1.6;
+}
+
+.student-name-link {
+    font-size: var(--font-size-base);
+    color: var(--gray-700);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--primary-blue);
+    text-decoration-thickness: 3px;
+    font-weight: 500;
+}
+
+.student-name-link:hover {
+    color: var(--primary-blue);
+}
+
+.student-name-text {
+    font-size: var(--font-size-base);
+    color: var(--gray-700);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--primary-blue);
+    text-decoration-thickness: 3px;
+    font-weight: 500;
+}
+
+.student-years {
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-2);
+    background: var(--white);
+    color: var(--gray-700);
+    border-radius: 8px;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    border: 1px solid var(--gray-700);
+}
+
+.student-affiliation {
+    color: var(--gray-600);
+    font-size: var(--font-size-base);
+    font-style: italic;
+}
+
+.opportunities-section {
+    background-color: var(--very-light-blue);
+    padding: var(--spacing-8);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-16);
+}
+
+.opportunities-title {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: var(--spacing-6);
+}
+
+.opportunities-text {
+    color: var(--gray-700);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-6);
+}
+
+.opportunities-areas h3 {
+    color: var(--gray-900);
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-bottom: var(--spacing-3);
+}
+
+.areas-list {
+    color: var(--gray-700);
+    margin-bottom: var(--spacing-6);
+    padding-left: var(--spacing-6);
+}
+
+.areas-list li {
+    margin-bottom: var(--spacing-2);
+}
+
+.contact-info {
+    background-color: var(--white);
+    padding: var(--spacing-4);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--gray-200);
+}
+
+.contact-info a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Teaching Page Styles - Using talks layout */
+.talk-description {
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin-top: var(--spacing-2);
+    font-size: var(--font-size-base);
+}
+
+.talk-description ul {
+    margin: 0;
+    padding-left: var(--spacing-6);
+    list-style-type: disc;
+}
+
+.talk-description ul ul {
+    margin-top: var(--spacing-1);
+    padding-left: var(--spacing-6);
+    list-style-type: circle;
+}
+
+.talk-description li {
+    margin-bottom: var(--spacing-1);
+}
+
+.talk-description li:last-child {
+    margin-bottom: 0;
+}
+
+.project-link {
+    color: var(--gray-600);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--primary-blue);
+    text-decoration-thickness: 3px;
+}
+
+.project-link:hover {
+    color: var(--primary-blue);
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-3);
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .section-title {
+        font-size: var(--font-size-2xl);
+    }
+}
+
+/* New Publications Styles for Bibliography Format */
+.bibliography {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--primary-blue);
+    margin-bottom: var(--spacing-4);
+    margin-top: var(--spacing-6);
+    border-bottom: 3px solid var(--primary-blue);
+    padding-bottom: var(--spacing-2);
+}
+
+.bibliography:first-of-type {
+    margin-top: 0 !important;
+}
+
+/* Service page specific - remove top margin from first bibliography */
+.service-section .bibliography:first-of-type {
+    margin-top: -30px !important;
+    padding-top: 0;
+}
+
+.publication-entry {
+    margin-bottom: var(--spacing-4);
+    padding-bottom: var(--spacing-4);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.publication-entry:last-child {
+    border-bottom: none;
+}
+
+.publication-entry .publication-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-2);
+    line-height: 1.4;
+}
+
+.publication-entry .publication-authors {
+    font-size: var(--font-size-base);
+    color: var(--gray-700);
+    margin-bottom: var(--spacing-1);
+    line-height: 1.5;
+}
+
+.publication-entry .publication-venue {
+    font-size: var(--font-size-base);
+    color: var(--primary-blue);
+    font-weight: 500;
+    margin-bottom: var(--spacing-3);
+    font-style: italic;
+}
+
+.publication-entry .publication-venue strong {
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2);
+    margin-top: var(--spacing-3);
+}
+
+.links .pub-link {
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-2);
+    background: var(--white);
+    color: var(--gray-700);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: 1px solid var(--gray-700);
+}
+
+.links .pub-link:hover {
+    background: var(--primary-blue);
+    color: var(--white);
+    border-color: var(--primary-blue);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 71, 171, 0.3);
+}
+
+/* Service Page Styles */
+.service-section {
+    margin-top: var(--spacing-8);
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-entry:last-child {
+    border-bottom: none;
+}
+
+.service-venue {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    margin-bottom: var(--spacing-2);
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.venue-text {
+    font-size: var(--font-size-base);
+    color: var(--gray-900);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.venue-links {
+    display: flex;
+    gap: var(--spacing-2);
+    align-items: center;
+}
+
+.venue-links .pub-link {
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-2);
+    background: var(--white);
+    color: var(--gray-700);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: 1px solid var(--gray-700);
+}
+
+.venue-links .pub-link:hover {
+    background: var(--primary-blue);
+    color: var(--white);
+    border-color: var(--primary-blue);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 71, 171, 0.3);
+}
+
+.award-text {
+    display: inline-block;
+    background: var(--primary-blue);
+    color: var(--white);
+    padding: 2px 6px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* Talks Page Styles */
+/* .talks-section {
+    margin-top: var(--spacing-8);
+} */
+
+.talks-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.talk-entry {
+    display: flex;
+    gap: var(--spacing-4);
+    padding-bottom: var(--spacing-4);
+}
+
+.talk-entry:last-child {
+    border-bottom: none;
+}
+
+.talk-date {
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-2);
+    background: var(--white);
+    color: var(--gray-1000);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    font-style: bold;
+    border: 1px solid var(--gray-800);
+    min-width: 80px;
+    text-align: center;
+    flex-shrink: 0;
+    align-self: flex-start;
+    height: fit-content;
+}
+
+.talk-content {
+    flex: 1;
+}
+
+.talk-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-2);
+    line-height: 1.4;
+}
+
+.talk-venue {
+    font-size: var(--font-size-base);
+    color: var(--primary-blue);
+    font-weight: 500;
+    margin-bottom: var(--spacing-3);
+    font-style: italic;
+}
+
+.talk-content .links {
+    display: flex;
+    gap: var(--spacing-2);
+    align-items: center;
+}
