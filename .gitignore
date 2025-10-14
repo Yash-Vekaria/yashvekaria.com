@@ -33,3 +33,6 @@ Temporary Items
 *.log
 npm-debug.log*
 
+# Temporary backup folder
+temp/
+
