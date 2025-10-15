@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.yashvekaria.com/sitemap.xml
+
+# Disallow temp folder
+Disallow: /temp/
