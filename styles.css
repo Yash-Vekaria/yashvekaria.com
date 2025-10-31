@@ -234,7 +234,7 @@ body {
 
 .profile-photo {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-xl);
