@@ -223,6 +223,7 @@ body {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    min-height: auto;
 }
 
 
@@ -459,13 +460,14 @@ body {
 .footer {
     background-color: var(--white);
     color: var(--gray-500);
-    padding: var(--spacing-4) 0;
+    padding: var(--spacing-4) 0 var(--spacing-2) 0;
     margin-right: 0;
     margin-top: var(--spacing-20);
+    margin-bottom: 0;
     width: 100%;
     border-top: 1px solid var(--gray-200);
     position: relative;
-    min-height: 60px;
+    flex-shrink: 0;
 }
 
 .footer-content {
@@ -475,6 +477,11 @@ body {
     max-width: 1050px;
     margin: 0 auto;
     padding: 0 var(--spacing-4);
+}
+
+.footer-content p {
+    margin: 0;
+    padding: 0;
 }
 
 .footer-links {
