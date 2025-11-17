@@ -679,6 +679,14 @@ body {
     margin-top: var(--spacing-6);
 }
 
+.students-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--spacing-2);
+    line-height: 1.6;
+}
+
 .student-entry {
     margin-bottom: var(--spacing-4);
 }
