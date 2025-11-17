@@ -1,15 +1,15 @@
-/* Reset and Base Styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Import sidebar styles */
+
 @import url('sidebar.css');
 
 :root {
-    /* Cobalt Blue Color Palette */
+    
     --primary-blue: #0047AB;
     --secondary-blue: #1E3A8A;
     --light-blue: #3B82F6;
@@ -17,7 +17,7 @@
     --dark-blue: #1E40AF;
     --very-light-blue: #EBF8FF;
     
-    /* Neutral Colors */
+    
     --white: #FFFFFF;
     --gray-50: #F9FAFB;
     --gray-100: #F3F4F6;
@@ -30,7 +30,7 @@
     --gray-800: #1F2937;
     --gray-900: #111827;
     
-    /* Typography */
+    
     --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
@@ -41,7 +41,7 @@
     --font-size-3xl: 1.875rem;
     --font-size-4xl: 2.25rem;
     
-    /* Spacing */
+    
     --spacing-1: 0.25rem;
     --spacing-2: 0.5rem;
     --spacing-3: 0.75rem;
@@ -54,13 +54,13 @@
     --spacing-16: 4rem;
     --spacing-20: 5rem;
     
-    /* Border Radius */
+    
     --radius-sm: 0.375rem;
     --radius-md: 0.5rem;
     --radius-lg: 0.75rem;
     --radius-xl: 1rem;
     
-    /* Shadows */
+    
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -87,7 +87,7 @@ body {
     border: 0;
 }
 
-/* Header Styles */
+
 .header {
     background-color: var(--white);
     border-bottom: 1px solid var(--gray-200);
@@ -107,6 +107,22 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: var(--spacing-4) 0;
+}
+
+@media (max-width: 768px) {
+    .header {
+        left: 0;
+        padding: var(--spacing-3) 0;
+    }
+
+    .header .container {
+        padding-left: calc(var(--spacing-4) + 3.5rem);
+        padding-right: var(--spacing-4);
+    }
+
+    .header-content {
+        justify-content: flex-start;
+    }
 }
 
 .logo-section {
@@ -170,7 +186,8 @@ body {
     }
 
     .nav-link {
-        font-size: 0.95rem;
+        font-size: 1.05rem;
+        font-weight: 600;
     }
 }
 
@@ -181,18 +198,19 @@ body {
     }
 
     .nav-link {
-        font-size: 0.85rem;
+        font-size: 1.1rem;
+        font-weight: 600;
     }
 }
 
-/* Main Content */
+
 .main {
     padding: var(--spacing-20) 0 var(--spacing-4) 0;
     margin-top: 20px;
     flex: 1;
 }
 
-/* Main content wrapper for sidebar layout */
+
 .main-content {
     margin-left: 300px;
     margin-right: 100px;
@@ -202,14 +220,14 @@ body {
     flex-direction: column;
 }
 
-/* Adjust container for sidebar layout */
+
 .container {
     max-width: 1050px;
     margin: 0 auto;
     padding: 0 var(--spacing-4);
 }
 
-/* Hero Section */
+
 .hero {
     margin-bottom: var(--spacing-20);
     opacity: 0;
@@ -309,7 +327,7 @@ body {
     box-shadow: var(--shadow-xl);
 }
 
-/* Section Styles */
+
 .section-title {
     font-size: var(--font-size-2xl);
     font-weight: 700;
@@ -318,7 +336,7 @@ body {
     text-align: left;
 }
 
-/* About Section */
+
 .about {
     margin-bottom: var(--spacing-16);
 }
@@ -330,7 +348,7 @@ body {
     margin-bottom: var(--spacing-4);
 }
 
-/* Updates Section */
+
 .updates {
     margin-bottom: var(--spacing-16);
 }
@@ -386,7 +404,7 @@ body {
     color: var(--primary-blue);
 }
 
-/* Research Interests */
+
 .research-interests {
     margin-bottom: var(--spacing-20);
 }
@@ -432,7 +450,7 @@ body {
     line-height: 1.6;
 }
 
-/* Footer */
+
 .footer {
     background-color: var(--white);
     color: var(--gray-500);
@@ -469,7 +487,7 @@ body {
     color: var(--white);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .header {
         left: 0;
@@ -517,7 +535,7 @@ body {
     }
 }
 
-/* Publications Page Styles */
+
 .page-header {
     text-align: center;
     margin-bottom: var(--spacing-16);
@@ -539,7 +557,7 @@ body {
     border-left: 3px solid var(--primary-blue);
 }
 
-/* Awards Section */
+
 .awards-list {
     display: flex;
     flex-direction: column;
@@ -616,7 +634,7 @@ body {
     text-decoration: underline;
 }
 
-/* Recognition Page Styles - Using service layout */
+
 .recognition-line {
     display: flex;
     flex-wrap: wrap;
@@ -678,7 +696,7 @@ body {
     white-space: nowrap;
 }
 
-/* Media Coverage Styles */
+
 .media-entry {
     display: flex;
     gap: var(--spacing-4);
@@ -739,7 +757,7 @@ body {
     color: var(--primary-blue);
 }
 
-/* Students Page Styles */
+
 .students-section {
     margin-bottom: var(--spacing-16);
 }
@@ -867,7 +885,7 @@ body {
     text-decoration: underline;
 }
 
-/* Teaching Page Styles - Using talks layout */
+
 .talk-description {
     color: var(--gray-600);
     line-height: 1.6;
@@ -921,7 +939,7 @@ body {
     }
 }
 
-/* New Publications Styles for Bibliography Format */
+
 .bibliography {
     font-size: var(--font-size-xl);
     font-weight: 600;
@@ -936,7 +954,7 @@ body {
     margin-top: 0 !important;
 }
 
-/* Service page specific - remove top margin from first bibliography */
+
 .service-section .bibliography:first-of-type {
     margin-top: -30px !important;
     padding-top: 0;
@@ -1007,7 +1025,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 71, 171, 0.3);
 }
 
-/* Service Page Styles */
+
 .service-section {
     margin-top: var(--spacing-8);
 }
@@ -1075,10 +1093,8 @@ body {
     white-space: nowrap;
 }
 
-/* Talks Page Styles */
-/* .talks-section {
-    margin-top: var(--spacing-8);
-} */
+
+
 
 .talks-list {
     display: flex;
@@ -1089,7 +1105,7 @@ body {
 .talk-entry {
     display: flex;
     gap: var(--spacing-4);
-    /* padding-bottom: var(--spacing-4); */
+    
 }
 
 .talk-entry:last-child {
@@ -1122,7 +1138,7 @@ body {
     font-size: var(--font-size-lg);
     font-weight: 600;
     color: var(--gray-900);
-    /* margin-bottom: var(--spacing-2); */
+    
     line-height: 1.4;
 }
 
@@ -1131,7 +1147,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     gap: var(--spacing-2);
-    /* margin-bottom: var(--spacing-3); */
+    
 }
 
 .talk-venue {
