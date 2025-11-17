@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Publications - Yash Vekaria</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
@@ -10,15 +11,9 @@
     <link rel="stylesheet" href="sidebar.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
-    <!-- Redirect to HTTPS and www -->
-    <script>
-        if (window.location.protocol !== 'https:' || window.location.hostname !== 'www.yashvekaria.com') {
-            window.location.href = 'https://www.yashvekaria.com' + window.location.pathname + window.location.search + window.location.hash;
-        }
-    </script>
 </head>
 <body>
+    <input type="checkbox" id="sidebarToggle" class="sidebar-toggle" aria-label="Toggle sidebar">
     <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-content">
@@ -77,12 +72,13 @@
     </aside>
 
     <!-- Mobile menu toggle -->
-    <button class="mobile-menu-toggle" id="mobileMenuToggle">
-        <i class="fas fa-bars"></i>
-    </button>
+    <label class="mobile-menu-toggle" for="sidebarToggle">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+        <span class="sr-only">Toggle sidebar</span>
+    </label>
 
     <!-- Sidebar overlay for mobile -->
-    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <label class="sidebar-overlay" for="sidebarToggle" aria-hidden="true"></label>
 
     <!-- Main Content -->
     <div class="main-content">
@@ -244,6 +240,5 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
 </body>
 </html>

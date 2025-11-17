@@ -1,6 +1,6 @@
 # Yash Vekaria's Personal Website
 
-A professional academic website built with modern HTML, CSS, and JavaScript, featuring a clean design with a cobalt blue theme.
+A professional academic website built entirely with performant HTML and CSS, featuring a clean design with a cobalt blue theme.
 
 ## Features
 
@@ -8,7 +8,7 @@ A professional academic website built with modern HTML, CSS, and JavaScript, fea
 - **Professional Layout**: Clean, modern design inspired by leading academic websites
 - **Cobalt Blue Theme**: Consistent color scheme throughout the site
 - **Comprehensive Sections**: Home, Publications, Service, Recognition, Talks, Students, Teaching
-- **Interactive Elements**: Hover effects, smooth transitions, and dynamic content
+- **Polished Interactions**: Pure-CSS hover effects, smooth transitions, and disclosure patterns
 - **SEO Optimized**: Proper meta tags and semantic HTML structure
 
 ## Pages
@@ -59,14 +59,7 @@ To redirect `yash-vekaria.github.io` to `yashvekaria.com`:
    yashvekaria.com
    ```
 
-2. Add this JavaScript redirect to your `index.html` (optional):
-   ```html
-   <script>
-     if (window.location.hostname === 'yash-vekaria.github.io') {
-       window.location.href = 'https://yashvekaria.com';
-     }
-   </script>
-   ```
+2. Configure your DNS/hosting provider (or GitHub Pages) to enforce HTTPS and automatically redirect the apex domain to the canonical `www` or vice versa. No client-side scripts are required.
 
 ### 2. File Structure
 
@@ -80,7 +73,6 @@ yashvekaria.com/
 ├── students.html         # Students page
 ├── teaching.html         # Teaching page
 ├── styles.css            # Main stylesheet
-├── script.js             # JavaScript functionality
 ├── favicon.svg           # Website favicon
 ├── ucdavis-logo.svg      # UC Davis logo
 ├── profile-photo.jpg     # Profile photo

@@ -13,8 +13,7 @@ Your new professional website has been created with a clean, modern design featu
 - `talks.html` - Talks page with invited talks and conference presentations
 - `students.html` - Students page with mentorship information
 - `teaching.html` - Teaching page with experience and philosophy
-- `styles.css` - Complete CSS with cobalt blue theme
-- `script.js` - JavaScript for interactivity
+- `styles.css` - Complete CSS with cobalt blue theme and interactions
 - `favicon.svg` - YV favicon with rounded square border
 
 ### Assets
@@ -60,15 +59,7 @@ www.yashvekaria.com → yash-vekaria.github.io
 ```
 
 ### 4. Set Up Redirect (Optional)
-To redirect visitors from `yash-vekaria.github.io` to `yashvekaria.com`, add this JavaScript to the `<head>` section of your `index.html`:
-
-```html
-<script>
-  if (window.location.hostname === 'yash-vekaria.github.io') {
-    window.location.href = 'https://yashvekaria.com';
-  }
-</script>
-```
+To redirect visitors from `yash-vekaria.github.io` to `yashvekaria.com`, configure the redirect at the DNS/hosting layer (e.g., GitHub Pages "Enforce HTTPS" + custom domain). No client-side JavaScript is necessary.
 
 ### 5. Customize Content
 1. Replace `profile-photo.svg` with your actual photo
