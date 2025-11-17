@@ -121,16 +121,16 @@
 .sidebar-link.cv i { color: #0047AB; }
     
     .mobile-menu-toggle {
-        position: fixed;
-        top: 1rem;
-        left: 1rem;
-        z-index: 1001;
-        background-color: #0047AB;
+    position: fixed;
+    top: calc(var(--spacing-3) + 2px);
+    left: 1rem;
+    z-index: 1001;
+    background-color: #0047AB;
     color: #fff;
-        border: none;
+    border: none;
     padding: 0.65rem 0.8rem;
     border-radius: 6px;
-        cursor: pointer;
+    cursor: pointer;
     display: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
