@@ -1049,16 +1049,25 @@ body {
     line-height: 1.4;
 }
 
+.talk-venue-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-2);
+    margin-bottom: var(--spacing-3);
+}
+
 .talk-venue {
     font-size: var(--font-size-base);
     color: var(--primary-blue);
     font-weight: 500;
-    margin-bottom: var(--spacing-3);
     font-style: italic;
+    margin-bottom: 0;
 }
 
 .talk-content .links {
     display: flex;
     gap: var(--spacing-2);
     align-items: center;
+    margin-top: 0;
 }
