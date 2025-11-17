@@ -1012,7 +1012,7 @@ body {
 .talk-entry {
     display: flex;
     gap: var(--spacing-4);
-    padding-bottom: var(--spacing-4);
+    /* padding-bottom: var(--spacing-4); */
 }
 
 .talk-entry:last-child {
@@ -1054,7 +1054,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     gap: var(--spacing-2);
-    margin-bottom: var(--spacing-3);
+    /* margin-bottom: var(--spacing-3); */
 }
 
 .talk-venue {
