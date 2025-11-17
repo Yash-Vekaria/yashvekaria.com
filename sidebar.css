@@ -120,9 +120,9 @@
 .sidebar-link.github i { color: #0047AB; }
 .sidebar-link.cv i { color: #0047AB; }
     
-    .mobile-menu-toggle {
+.mobile-menu-toggle {
     position: fixed;
-    top: calc(var(--spacing-3) + 2px);
+    top: 1rem;
     left: 1rem;
     z-index: 1001;
     background-color: #0047AB;

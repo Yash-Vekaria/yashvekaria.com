@@ -8,6 +8,11 @@
 
 @import url('sidebar.css');
 
+html {
+    height: 100%;
+    min-height: 100vh;
+}
+
 :root {
     
     --primary-blue: #0047AB;
@@ -74,6 +79,7 @@ body {
     background-color: var(--white);
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
 }
 
 .sr-only {
@@ -207,7 +213,7 @@ body {
 .main {
     padding: var(--spacing-20) 0 var(--spacing-4) 0;
     margin-top: 20px;
-    flex: 1;
+    flex: 1 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -223,7 +229,7 @@ body {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    min-height: auto;
+    min-height: 100vh;
 }
 
 
@@ -467,7 +473,7 @@ body {
     width: 100%;
     border-top: 1px solid var(--gray-200);
     position: relative;
-    flex-shrink: 0;
+    flex: 0 0 auto;
 }
 
 .footer-content {
