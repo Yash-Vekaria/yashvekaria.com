@@ -95,15 +95,15 @@ body {
 
 
 .header {
-    background-color: var(--white);
+    background-color: transparent;
     position: fixed;
-    top: 0;
-    left: 360px;
+    top: 2rem;
+    left: 400px;
     right: 0;
     z-index: 10;
     transform: translateZ(0);
     will-change: transform;
-    padding: var(--spacing-4) 0;
+    padding: 0;
 }
 
 .header-content {
@@ -121,6 +121,10 @@ body {
     border: 1px solid var(--gray-200);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
+}
+
+.header .container .nav {
+    width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -161,9 +165,17 @@ body {
     display: flex;
     list-style: none;
     gap: 0;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-link {
@@ -236,7 +248,7 @@ body {
 
 
 .main-content {
-    margin-left: 360px;
+    margin-left: 400px;
     margin-right: 100px;
     background-color: #ffffff;
     display: flex;
