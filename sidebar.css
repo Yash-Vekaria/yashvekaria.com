@@ -22,8 +22,8 @@
 .sidebar-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-end;
+    text-align: right;
     height: 100%;
     padding-right: 1.5rem;
 }
@@ -36,13 +36,15 @@
     margin-bottom: 1rem;
     border: 3px solid #0047AB;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-self: flex-end;
 }
 
 .sidebar-name {
     font-size: 1.5rem;
     font-weight: 600;
     color: #212529;
-    text-align: center;
+    text-align: right;
+    width: 100%;
 }
 
 .affiliation-text {
@@ -52,8 +54,9 @@
     color: #0047AB;
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
-    text-align: center;
+    text-align: right;
     line-height: 1.4;
+    width: 100%;
 }
 
 .sidebar-title {
@@ -62,6 +65,8 @@
     font-style: italic;
     color: #0047AB;
     margin-bottom: 0.25rem;
+    text-align: right;
+    width: 100%;
 }
 
 .sidebar-affiliation {
@@ -78,6 +83,7 @@
     margin: 1.5rem 0;
     border: none;
     display: block;
+    align-self: flex-end;
 }
 
 .sidebar-links {
@@ -85,6 +91,9 @@
     padding: 0;
     margin: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .sidebar-links li {
@@ -101,6 +110,8 @@
     transition: all 0.2s ease;
     font-size: 1rem;
     font-weight: 400;
+    justify-content: flex-end;
+    width: fit-content;
 }
 
 .sidebar-link:hover {
