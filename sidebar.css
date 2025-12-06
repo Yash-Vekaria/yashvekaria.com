@@ -12,11 +12,9 @@
     width: 300px;
     height: 100vh;
     background-color: #f8f9fa;
-    border-right: 1px solid #e9ecef;
     padding: 2rem 1.5rem;
     overflow-y: auto;
     z-index: 1000;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     will-change: transform;
 }
@@ -27,12 +25,13 @@
     align-items: center;
     text-align: center;
     height: 100%;
+    padding-right: 1.5rem;
 }
 
 .profile-photo {
     width: 240px;
     height: 240px;
-    border-radius: 50%;
+    border-radius: 20px;
     object-fit: cover;
     margin-bottom: 1rem;
     border: 3px solid #0047AB;
@@ -46,10 +45,15 @@
     text-align: center;
 }
 
-.affiliation-logo {
-    width: 200px;
-    height: auto;
-    opacity: 0.95;
+.affiliation-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #0047AB;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+    line-height: 1.4;
 }
 
 .sidebar-title {
