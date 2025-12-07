@@ -121,6 +121,8 @@ body {
     border: 2px solid var(--gray-200);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
+    position: relative;
+    z-index: 11;
 }
 
 .header .container .nav {
@@ -185,8 +187,7 @@ body {
     font-size: 1rem;
     transition: color 0.2s ease;
     position: relative;
-    flex: 1;
-    text-align: center;
+    display: inline-block;
 }
 
 .nav-link:hover {
@@ -204,7 +205,8 @@ body {
     bottom: -12px;
     left: 0;
     right: 0;
-    height: 2px;
+    width: 100%;
+    height: 4px;
     background-color: var(--primary-blue);
     border-radius: 1px;
 }
@@ -366,7 +368,7 @@ body {
 
 
 .section-title {
-    font-size: var(--font-size-2xl);
+    font-size: calc(var(--font-size-2xl) - 1px);
     font-weight: 700;
     color: var(--gray-900);
     margin-bottom: var(--spacing-6);
@@ -379,7 +381,7 @@ body {
 }
 
 .about-text {
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) - 1px);
     line-height: 1.7;
     color: var(--gray-700);
     margin-bottom: var(--spacing-4);
@@ -417,7 +419,7 @@ body {
 .update-date {
     font-weight: 700;
     color: var(--gray-700);
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) - 1px);
     font-size: bold;
     min-width: 100px;
     flex-shrink: 0;
@@ -427,6 +429,7 @@ body {
     flex: 1;
     color: var(--gray-700);
     line-height: 1.5;
+    font-size: calc(var(--font-size-base) - 1px);
 }
 
 .update-link {
@@ -488,47 +491,6 @@ body {
 }
 
 
-.footer {
-    background-color: var(--white);
-    color: var(--gray-500);
-    padding: var(--spacing-4) 0 var(--spacing-2) 0;
-    margin-right: 0;
-    margin-top: var(--spacing-20);
-    margin-bottom: 0;
-    width: 100%;
-    border-top: 1px solid var(--gray-200);
-    position: relative;
-    flex: 0 0 auto;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1050px;
-    margin: 0 auto;
-    padding: 0 var(--spacing-4);
-}
-
-.footer-content p {
-    margin: 0;
-    padding: 0;
-}
-
-.footer-links {
-    display: flex;
-    gap: var(--spacing-6);
-}
-
-.footer-links a {
-    color: var(--gray-300);
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.footer-links a:hover {
-    color: var(--white);
-}
 
 
 @media (max-width: 768px) {
@@ -551,9 +513,6 @@ body {
         margin-right: 0;
     }
     
-    .footer {
-        margin-left: 0;
-    }
     
     .update-item {
         flex-direction: column;
@@ -571,11 +530,6 @@ body {
         gap: var(--spacing-2);
     }
     
-    .footer-content {
-        flex-direction: column;
-        gap: var(--spacing-4);
-        text-align: center;
-    }
 }
 
 
@@ -585,7 +539,7 @@ body {
 }
 
 .page-title {
-    font-size: var(--font-size-4xl);
+    font-size: calc(var(--font-size-4xl) - 1px);
     font-weight: 700;
     color: var(--gray-900);
     margin-bottom: var(--spacing-4);
@@ -652,7 +606,7 @@ body {
 
 .award-details strong {
     color: var(--gray-900);
-    font-size: var(--font-size-lg);
+    font-size: calc(var(--font-size-lg) - 1px);
     font-weight: 600;
     display: block;
     margin-bottom: var(--spacing-2);
@@ -713,7 +667,7 @@ body {
 }
 
 .recognition-text {
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) - 1px);
     color: var(--gray-700);
     line-height: 1.5;
 }
@@ -769,7 +723,7 @@ body {
 }
 
 .media-title {
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) - 1px);
     font-weight: 600;
     color: var(--gray-900);
     margin-bottom: var(--spacing-1);
@@ -777,7 +731,7 @@ body {
 }
 
 .media-source {
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) - 1px);
     color: var(--gray-700);
     line-height: 1.5;
     margin-bottom: var(--spacing-1);
@@ -834,7 +788,7 @@ body {
 }
 
 .student-name-link {
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) - 1px);
     color: var(--gray-700);
     text-decoration: underline;
     text-underline-offset: 6px;
@@ -848,7 +802,7 @@ body {
 }
 
 .student-name-text {
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) - 1px);
     color: var(--gray-700);
     text-decoration: underline;
     text-underline-offset: 6px;
@@ -870,7 +824,7 @@ body {
 
 .student-affiliation {
     color: var(--gray-600);
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) - 1px);
     font-style: italic;
 }
 
@@ -882,7 +836,7 @@ body {
 }
 
 .opportunities-title {
-    font-size: var(--font-size-2xl);
+    font-size: calc(var(--font-size-2xl) - 1px);
     font-weight: 700;
     color: var(--primary-blue);
     margin-bottom: var(--spacing-6);
@@ -896,7 +850,7 @@ body {
 
 .opportunities-areas h3 {
     color: var(--gray-900);
-    font-size: var(--font-size-lg);
+    font-size: calc(var(--font-size-lg) - 1px);
     font-weight: 600;
     margin-bottom: var(--spacing-3);
 }
@@ -933,7 +887,7 @@ body {
     color: var(--gray-600);
     line-height: 1.6;
     margin-top: var(--spacing-2);
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) - 1px);
 }
 
 .talk-description ul {
@@ -984,7 +938,7 @@ body {
 
 
 .bibliography {
-    font-size: var(--font-size-xl);
+    font-size: calc(var(--font-size-xl) - 1px);
     font-weight: 600;
     color: var(--primary-blue);
     margin-bottom: var(--spacing-4);
@@ -1014,7 +968,7 @@ body {
 }
 
 .publication-entry .publication-title {
-    font-size: var(--font-size-lg);
+    font-size: calc(var(--font-size-lg) - 1px);
     font-weight: 600;
     color: var(--gray-900);
     margin-bottom: var(--spacing-2);
@@ -1022,14 +976,14 @@ body {
 }
 
 .publication-entry .publication-authors {
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) - 1px);
     color: var(--gray-700);
     margin-bottom: var(--spacing-1);
     line-height: 1.5;
 }
 
 .publication-entry .publication-venue {
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) - 1px);
     color: var(--primary-blue);
     font-weight: 500;
     margin-bottom: var(--spacing-3);
@@ -1092,7 +1046,7 @@ body {
 }
 
 .venue-text {
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) - 1px);
     color: var(--gray-900);
     line-height: 1.5;
     font-weight: 500;
@@ -1178,7 +1132,7 @@ body {
 }
 
 .talk-title {
-    font-size: var(--font-size-lg);
+    font-size: calc(var(--font-size-lg) - 1px);
     font-weight: 600;
     color: var(--gray-900);
     
@@ -1194,7 +1148,7 @@ body {
 }
 
 .talk-venue {
-    font-size: var(--font-size-base);
+    font-size: calc(var(--font-size-base) - 1px);
     color: var(--primary-blue);
     font-weight: 500;
     font-style: italic;
