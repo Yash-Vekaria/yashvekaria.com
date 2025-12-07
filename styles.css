@@ -129,7 +129,7 @@ body {
     margin-left: 95px;
     padding: var(--spacing-4) 0;
     background-color: var(--white);
-    border: 2px solid var(--gray-200);
+    border: 2px solid var(--primary-blue);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
     position: relative;
@@ -213,7 +213,7 @@ body {
 .nav-link.active::after {
     content: '';
     position: absolute;
-    bottom: -12px;
+    bottom: -6px;
     left: 0;
     right: 0;
     width: 100%;
@@ -811,7 +811,7 @@ body {
 }
 
 .student-name-text {
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: calc(var(--font-size-lg) - 3px);
     color: var(--gray-700);
     text-decoration: underline;
     text-underline-offset: 6px;
@@ -833,7 +833,7 @@ body {
 
 .student-affiliation {
     color: var(--gray-600);
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: calc(var(--font-size-lg) - 3px);
     font-style: italic;
 }
 
