@@ -163,6 +163,8 @@
 @media (max-width: 768px) {
     .sidebar {
         transform: translateX(-100%);
+        width: 280px;
+        padding: 1.5rem 1rem;
     }
 
     .sidebar-toggle:checked ~ .sidebar {
@@ -170,18 +172,41 @@
     }
 
     .sidebar-toggle:checked ~ .sidebar-overlay {
-    display: block;
+        display: block;
     }
 
     .mobile-menu-toggle {
         display: flex;
         align-items: center;
         justify-content: center;
+        top: 0.75rem;
+        left: 0.75rem;
+        padding: 0.6rem 0.75rem;
     }
 
     .main-content {
         margin-left: 0;
         margin-right: 0;
+    }
+    
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .sidebar-name {
+        font-size: 1.25rem;
+    }
+    
+    .sidebar-title,
+    .affiliation-text {
+        font-size: 0.85rem;
+    }
+    
+    .sidebar-link {
+        font-size: 0.9rem;
+        padding: 0.4rem 0;
+        width: 200px;
     }
 }
 
