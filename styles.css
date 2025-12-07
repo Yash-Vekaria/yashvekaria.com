@@ -1111,7 +1111,19 @@ body {
 
 @media (max-width: 768px) {
     .publication-entry .publication-title {
-        font-size: calc(var(--font-size-lg) - 2px);
+        font-size: calc(var(--font-size-lg) - 4px);
+    }
+    
+    /* Non-homepage font size reductions for tablet/mobile */
+    .recognition-text,
+    .media-title,
+    .student-name-link,
+    .talk-title,
+    .venue-text,
+    .media-source,
+    .student-name-text,
+    .talk-venue {
+        font-size: calc(var(--font-size-lg) - 4px);
     }
 }
 
