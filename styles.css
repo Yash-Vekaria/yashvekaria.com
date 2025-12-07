@@ -1122,7 +1122,11 @@ body {
     .venue-text,
     .media-source,
     .student-name-text,
-    .talk-venue {
+    .talk-venue,
+    .talk-description,
+    .award-details strong,
+    .publication-entry .publication-authors,
+    .publication-entry .publication-venue {
         font-size: calc(var(--font-size-lg) - 4px);
     }
 }
