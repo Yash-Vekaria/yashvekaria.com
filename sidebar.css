@@ -162,10 +162,13 @@
 
 @media (max-width: 768px) {
     .sidebar {
+        left: 0;
         transform: translateX(-100%);
-        width: 280px;
+        width: 85%;
+        max-width: 300px;
         padding: 1.5rem 1rem;
         transition: transform 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     }
 
     .sidebar-toggle:checked ~ .sidebar {
@@ -175,6 +178,10 @@
     .sidebar-toggle:checked ~ .sidebar-overlay {
         display: block;
     }
+    
+    .sidebar-toggle:not(:checked) ~ .sidebar-overlay {
+        display: none;
+    }
 
     .mobile-menu-toggle {
         display: flex;
@@ -183,10 +190,7 @@
         top: 0.75rem;
         left: 0.75rem;
         padding: 0.6rem 0.75rem;
-    }
-    
-    .sidebar-toggle:not(:checked) ~ .sidebar {
-        transform: translateX(-100%);
+        z-index: 1002;
     }
 
     .main-content {
@@ -194,24 +198,36 @@
         margin-right: 0;
     }
     
+    .sidebar-content {
+        padding-right: 1rem;
+    }
+    
     .profile-photo {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
+        align-self: flex-end;
     }
     
     .sidebar-name {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
     
-    .sidebar-title,
+    .sidebar-title {
+        font-size: 0.9375rem;
+    }
+    
     .affiliation-text {
-        font-size: 0.85rem;
+        font-size: 0.875rem;
     }
     
     .sidebar-link {
-        font-size: 0.9rem;
+        font-size: 0.9375rem;
         padding: 0.4rem 0;
-        width: 200px;
+        width: 180px;
+    }
+    
+    .sidebar-separator {
+        width: 70%;
     }
 }
 
