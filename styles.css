@@ -95,26 +95,16 @@ body {
 
 
 .header {
-    background-color: transparent;
+    background-color: var(--white);
     position: fixed;
-    top: 2rem;
+    top: 0;
     left: 400px;
     right: 0;
     z-index: 10;
     transform: translateZ(0);
     will-change: transform;
-    padding: 0;
-}
-
-.header::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2rem;
-    background-color: var(--white);
-    z-index: 10;
+    padding: 2rem 0 0 0;
+    min-height: 2rem;
 }
 
 .header-content {
@@ -410,7 +400,7 @@ body {
 .update-item {
     display: flex;
     gap: var(--spacing-6);
-    padding: var(--spacing-1) 0;
+    padding: var(--spacing-2) 0;
     position: relative;
     align-items: center;
 }
@@ -428,7 +418,7 @@ body {
 .update-date {
     font-weight: 700;
     color: var(--gray-700);
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: calc(var(--font-size-lg) - 3px);
     font-size: bold;
     min-width: 100px;
     flex-shrink: 0;
