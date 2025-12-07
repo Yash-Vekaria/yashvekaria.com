@@ -48,7 +48,7 @@
 }
 
 .affiliation-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     font-style: italic;
     color: #0047AB;
@@ -61,11 +61,12 @@
 
 .sidebar-title {
     font-size: 1rem;
-    /* font-weight: 600; */
+    font-weight: 600;
     font-style: italic;
     color: #0047AB;
     margin-bottom: 0.25rem;
     text-align: right;
+    line-height: 1.4;
     width: 100%;
 }
 
