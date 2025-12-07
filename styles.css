@@ -1102,7 +1102,6 @@ body {
     line-height: 1.4;
 }
 
-
 .publication-entry .publication-authors {
     font-size: calc(var(--font-size-lg) - 2px);
     color: var(--gray-700);
@@ -1382,6 +1381,6 @@ body {
     .talk-description,
     .venue-text,
     .award-details strong {
-        font-size: calc(var(--font-size-lg) - 3px);
+        font-size: calc(var(--font-size-lg) - 3px) !important;
     }
 }
