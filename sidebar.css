@@ -60,7 +60,7 @@
 }
 
 .sidebar-title {
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 600;
     font-style: italic;
     color: #0047AB;
@@ -71,7 +71,7 @@
 }
 
 .sidebar-affiliation {
-    font-size: 1rem;
+    font-size: 1px;
     color: #6c757d;
     margin-bottom: 1.5rem;
     line-height: 1.4;
