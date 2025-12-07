@@ -110,11 +110,11 @@ body {
     content: '';
     position: fixed;
     top: 0;
-    left: 400px;
+    left: 0;
     right: 0;
     height: 2rem;
     background-color: var(--white);
-    z-index: 9;
+    z-index: 10;
 }
 
 .header-content {
@@ -410,7 +410,7 @@ body {
 .update-item {
     display: flex;
     gap: var(--spacing-6);
-    padding: var(--spacing-3) 0;
+    padding: var(--spacing-1) 0;
     position: relative;
     align-items: center;
 }
