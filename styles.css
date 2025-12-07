@@ -114,11 +114,11 @@ body {
 }
 
 .header .container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 770px;
+    margin-left: 90px;
     padding: var(--spacing-4) var(--spacing-6);
     background-color: var(--white);
-    border: 1px solid var(--gray-200);
+    border: 2px solid var(--gray-200);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
 }
@@ -248,8 +248,8 @@ body {
 
 
 .main-content {
-    margin-left: 400px;
-    margin-right: 100px;
+    margin-left: 475px;
+    margin-right: 225px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -259,6 +259,7 @@ body {
 
 .container {
     max-width: 800px;
+    border-left: 0px;
     margin: 0 auto;
     padding: 0 var(--spacing-4);
 }
