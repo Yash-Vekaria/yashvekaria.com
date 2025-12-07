@@ -147,11 +147,15 @@ body {
         max-width: 100%;
         margin-left: 0;
         padding: var(--spacing-3) var(--spacing-4);
-        padding-left: 5rem;
+        padding-left: 0;
         border-radius: 0;
         border-left: none;
         border-right: none;
         border-top: none;
+    }
+    
+    .header .header-content {
+        margin-left: 5.5rem;
     }
 
     .header-content {
