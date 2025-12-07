@@ -95,22 +95,26 @@ body {
 
 
 .header {
-    background-color: var(--white);
+    background-color: transparent;
     position: fixed;
-    top: 0;
+    top: 2rem;
     left: 400px;
     right: 0;
     z-index: 10;
     transform: translateZ(0);
     will-change: transform;
-    padding: 2rem 0 0 0;
-    height: 100vh;
-    overflow: hidden;
-    pointer-events: none;
+    padding: 0;
 }
 
-.header > * {
-    pointer-events: auto;
+.header::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 400px;
+    right: 0;
+    height: 2rem;
+    background-color: var(--white);
+    z-index: 9;
 }
 
 .header-content {
