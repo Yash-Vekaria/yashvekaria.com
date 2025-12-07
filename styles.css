@@ -1044,23 +1044,6 @@ body {
     .update-date {
         font-size: calc(var(--font-size-lg) - 2px);
     }
-    
-    /* Non-homepage font size reductions for mobile - all entry components */
-    .publication-entry .publication-title,
-    .publication-entry .publication-authors,
-    .publication-entry .publication-venue,
-    .recognition-text,
-    .media-title,
-    .media-source,
-    .student-name-link,
-    .student-name-text,
-    .talk-title,
-    .talk-venue,
-    .talk-description,
-    .venue-text,
-    .award-details strong {
-        font-size: calc(var(--font-size-lg) - 3px);
-    }
 }
 
 
