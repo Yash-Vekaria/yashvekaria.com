@@ -378,7 +378,7 @@ body {
 
 
 .about {
-    margin-bottom: var(--spacing-16);
+    margin-bottom: var(--spacing-10);
 }
 
 .about-text {
@@ -390,7 +390,7 @@ body {
 
 
 .updates {
-    margin-bottom: var(--spacing-16);
+    margin-bottom: var(--spacing-10);
 }
 
 .updates-list {
@@ -991,6 +991,50 @@ body {
 
 .publication-entry .publication-venue strong {
     font-weight: 700;
+}
+
+.publication-filters {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-8);
+    flex-wrap: wrap;
+}
+
+.filter-label {
+    font-size: calc(var(--font-size-lg) - 2px);
+    font-weight: 600;
+    color: var(--gray-700);
+}
+
+.year-filters {
+    display: flex;
+    gap: var(--spacing-2);
+    flex-wrap: wrap;
+}
+
+.year-filter {
+    padding: var(--spacing-2) var(--spacing-4);
+    background: var(--white);
+    color: var(--gray-700);
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    font-size: calc(var(--font-size-base) - 1px);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.year-filter:hover {
+    background: var(--gray-100);
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+}
+
+.year-filter.active {
+    background: var(--primary-blue);
+    color: var(--white);
+    border-color: var(--primary-blue);
 }
 
 .links {
