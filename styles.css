@@ -1037,6 +1037,39 @@ body {
     border-color: var(--primary-blue);
 }
 
+.media-coverage-filters {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-8);
+    margin-top: var(--spacing-4);
+    flex-wrap: wrap;
+}
+
+.year-filter-media {
+    padding: var(--spacing-2) var(--spacing-4);
+    background: var(--white);
+    color: var(--gray-700);
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    font-size: calc(var(--font-size-base) - 1px);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.year-filter-media:hover {
+    background: var(--gray-100);
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+}
+
+.year-filter-media.active {
+    background: var(--primary-blue);
+    color: var(--white);
+    border-color: var(--primary-blue);
+}
+
 .links {
     display: flex;
     flex-wrap: wrap;
