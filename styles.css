@@ -1045,10 +1045,6 @@ body {
         font-size: calc(var(--font-size-lg) - 2px);
     }
     
-    .publication-entry .publication-title {
-        font-size: calc(var(--font-size-sm) + 1px);
-    }
-    
     /* Non-homepage font size reductions for mobile - all entry components */
     .publication-entry .publication-title,
     .publication-entry .publication-authors,
