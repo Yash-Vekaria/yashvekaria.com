@@ -1053,6 +1053,21 @@ body {
     .publication-entry .publication-venue {
         font-size: calc(var(--font-size-lg) - 2px);
     }
+    
+    /* Non-homepage font size reductions for mobile */
+    .recognition-text,
+    .media-title,
+    .student-name-link,
+    .talk-title,
+    .venue-text {
+        font-size: calc(var(--font-size-lg) - 3px);
+    }
+    
+    .media-source,
+    .student-name-text,
+    .talk-venue {
+        font-size: calc(var(--font-size-lg) - 4px);
+    }
 }
 
 
