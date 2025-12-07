@@ -162,17 +162,16 @@
 
 @media (max-width: 768px) {
     .sidebar {
-        left: 0;
+        left: 0 !important;
         transform: translateX(-100%);
-        width: 85%;
-        max-width: 300px;
+        width: 280px;
         padding: 1.5rem 1rem;
         transition: transform 0.3s ease;
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     }
 
     .sidebar-toggle:checked ~ .sidebar {
-        transform: translateX(0);
+        transform: translateX(0) !important;
     }
 
     .sidebar-toggle:checked ~ .sidebar-overlay {
@@ -180,11 +179,15 @@
     }
     
     .sidebar-toggle:not(:checked) ~ .sidebar-overlay {
-        display: none;
+        display: none !important;
+    }
+    
+    .sidebar-toggle:not(:checked) ~ .sidebar {
+        transform: translateX(-100%) !important;
     }
 
     .mobile-menu-toggle {
-        display: flex;
+        display: flex !important;
         align-items: center;
         justify-content: center;
         top: 0.75rem;
