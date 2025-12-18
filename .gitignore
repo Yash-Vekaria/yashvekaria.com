@@ -36,3 +36,7 @@ npm-debug.log*
 # Temporary backup folder
 temp/
 
+# Ignore documentation and certain large assets
+docs/
+img/profile-picture.*
+
