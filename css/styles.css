@@ -90,7 +90,7 @@ body {
     background-color: var(--white);
     position: fixed;
     top: 0;
-    left: 400px;
+    left: 475px;
     right: 0;
     z-index: 10;
     transform: translateZ(0);
@@ -300,7 +300,7 @@ body {
 
 .main-content {
     margin-left: 475px;
-    margin-right: 225px;
+    margin-right: 0;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
