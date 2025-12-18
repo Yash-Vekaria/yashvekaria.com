@@ -111,9 +111,12 @@ body {
     margin-left: 95px;
     padding: var(--spacing-4) 0;
     background-color: var(--white);
-    border: 2px solid var(--primary-blue);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
+    border-top: 2px solid var(--primary-blue);
+    border-bottom: 2px solid var(--primary-blue);
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    box-shadow: none;
     position: relative;
     z-index: 11;
 }
@@ -574,7 +577,7 @@ body {
     .year-filter,
     .year-filter-media {
         font-size: 0.9rem;
-        padding: var(--spacing-2) var(--spacing-3);
+        padding: var(--spacing-1) var(--spacing-2);
     }
     
     .filter-label {
@@ -1108,7 +1111,7 @@ body {
 }
 
 .year-filter {
-    padding: var(--spacing-2) var(--spacing-4);
+    padding: var(--spacing-1) var(--spacing-2);
     background: var(--white);
     color: var(--gray-700);
     border: 1px solid var(--gray-700);
@@ -1141,7 +1144,7 @@ body {
 }
 
 .year-filter-media {
-    padding: var(--spacing-2) var(--spacing-4);
+    padding: var(--spacing-1) var(--spacing-2);
     background: var(--white);
     color: var(--gray-700);
     border: 1px solid var(--gray-700);

@@ -10,7 +10,7 @@ Your new professional website has been created with a clean, modern design featu
 - `publications.html` - Publications page with boxed styling
 - `service.html` - Service page with structured sections
 - `recognition.html` - Recognition page with awards, fellowships, and media coverage
-- `talks.html` - Talks page with invited talks and conference presentations
+- `impact.html` - Impact page (broader impact, outreach, applied work)
 - `students.html` - Students page with mentorship information
 - `teaching.html` - Teaching page with experience and philosophy
 - `styles.css` - Complete CSS with cobalt blue theme and interactions

@@ -7,7 +7,7 @@ A professional academic website built entirely with performant HTML and CSS, fea
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
 - **Professional Layout**: Clean, modern design inspired by leading academic websites
 - **Cobalt Blue Theme**: Consistent color scheme throughout the site
-- **Comprehensive Sections**: Home, Publications, Service, Recognition, Talks, Students, Teaching
+-- **Comprehensive Sections**: Home, Publications, Service, Recognition, Impact, Students, Teaching
 - **Polished Interactions**: Pure-CSS hover effects, smooth transitions, and disclosure patterns
 - **SEO Optimized**: Proper meta tags and semantic HTML structure
 
@@ -17,7 +17,7 @@ A professional academic website built entirely with performant HTML and CSS, fea
 2. **Publications**: Comprehensive list of research publications with boxed styling
 3. **Service**: Academic service including program committees, reviews, and awards
 4. **Recognition**: Awards, fellowships, and media coverage
-5. **Talks**: Invited talks, conference presentations, and seminars
+5. **Impact**: Highlights of broader impact, outreach, and applied work
 6. **Students**: Research mentorship and student supervision
 7. **Teaching**: Teaching experience, philosophy, and course materials
 
@@ -69,7 +69,7 @@ yashvekaria.com/
 ├── publications.html       # Publications page
 ├── service.html           # Service page
 ├── recognition.html       # Recognition page
-├── talks.html            # Talks page
+├── impact.html           # Impact page
 ├── students.html         # Students page
 ├── teaching.html         # Teaching page
 ├── styles.css            # Main stylesheet
