@@ -129,7 +129,7 @@ body {
     width: 100%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 .header {
     left: 0;
     right: 0;
@@ -295,7 +295,7 @@ body {
     flex: 1 0 auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     .main {
         padding-top: calc(var(--spacing-20) + var(--spacing-8));
     }
@@ -534,7 +534,7 @@ body {
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     .main-content {
         margin-left: 0;
         margin-right: 0;
@@ -1330,7 +1330,7 @@ body {
 }
 
 /* Mobile font size overrides - must come after all base rules to ensure they take precedence */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     .publication-entry .publication-title,
     .publication-entry .publication-authors,
     .publication-entry .publication-venue,
