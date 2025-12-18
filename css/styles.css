@@ -1220,8 +1220,13 @@ body {
     flex-direction: column;
 }
 
+.service-entry {
+    margin-bottom: var(--spacing-8);
+}
+
 .service-entry:last-child {
     border-bottom: none;
+    margin-bottom: 0;
 }
 
 .service-venue {
