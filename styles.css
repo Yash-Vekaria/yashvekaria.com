@@ -211,7 +211,7 @@ body {
 }
 
 .site-title {
-    font-size: var(--font-size-2xl);
+    font-size: 1rem;
     font-weight: 700;
     color: var(--primary-blue);
     margin: 0;
@@ -272,7 +272,7 @@ body {
     }
 
     .nav-link {
-        font-size: 1.05rem;
+        font-size: 1rem;
         font-weight: 600;
     }
 }
@@ -284,7 +284,7 @@ body {
     }
 
     .nav-link {
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: 600;
     }
 }
@@ -347,21 +347,21 @@ body {
 }
 
 .hero-title {
-    font-size: var(--font-size-4xl);
+    font-size: 0.9rem;
     font-weight: 700;
     color: var(--gray-900);
     margin-bottom: var(--spacing-2);
 }
 
 .hero-subtitle {
-    font-size: var(--font-size-xl);
+    font-size: 0.9rem;
     color: var(--primary-blue);
     font-weight: 600;
     margin-bottom: var(--spacing-6);
 }
 
 .hero-description {
-    font-size: var(--font-size-lg);
+    font-size: 0.9rem;
     color: var(--gray-600);
     margin-bottom: var(--spacing-8);
     line-height: 1.7;
@@ -402,7 +402,7 @@ body {
     text-decoration: none;
     border-radius: var(--radius-md);
     font-weight: 500;
-    font-size: var(--font-size-sm);
+    font-size: 0.9rem;
     transition: all 0.2s ease;
 }
 
@@ -422,7 +422,7 @@ body {
 
 
 .section-title {
-    font-size: calc(var(--font-size-2xl) - 1px);
+    font-size: 0.9rem;
     font-weight: 700;
     color: var(--gray-900);
     margin-bottom: var(--spacing-6);
@@ -435,7 +435,7 @@ body {
 }
 
 .about-text {
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: 0.9rem;
     line-height: 1.7;
     color: var(--gray-700);
     margin-bottom: var(--spacing-4);
@@ -471,7 +471,7 @@ body {
 .update-date {
     font-weight: 700;
     color: var(--gray-700);
-    font-size: calc(var(--font-size-lg) - 3px);
+    font-size: 0.9rem;
     font-size: bold;
     min-width: 100px;
     flex-shrink: 0;
@@ -481,7 +481,7 @@ body {
     flex: 1;
     color: var(--gray-700);
     line-height: 1.5;
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: 0.9rem;
 }
 
 .update-link {
@@ -525,13 +525,13 @@ body {
 }
 
 .interest-card i {
-    font-size: var(--font-size-4xl);
+    font-size: 0.9rem;
     color: var(--primary-blue);
     margin-bottom: var(--spacing-4);
 }
 
 .interest-card h4 {
-    font-size: var(--font-size-xl);
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--gray-900);
     margin-bottom: var(--spacing-3);
@@ -596,23 +596,23 @@ body {
     }
     
     .filter-label {
-        font-size: calc(var(--font-size-base) - 1px);
+        font-size: 1rem;
     }
     
     .section-title {
-        font-size: calc(var(--font-size-xl) - 1px);
+        font-size: 0.9rem;
     }
     
     .bibliography {
-        font-size: calc(var(--font-size-lg) - 1px);
+        font-size: 1rem;
     }
     
     .publication-entry .publication-title {
-        font-size: calc(var(--font-size-base) - 1px);
+        font-size: 0.9rem;
     }
     
     .page-title {
-        font-size: calc(var(--font-size-3xl) - 1px);
+        font-size: 0.9rem;
     }
     
 }
@@ -624,7 +624,7 @@ body {
 }
 
 .page-title {
-    font-size: calc(var(--font-size-4xl) - 1px);
+    font-size: 0.9rem;
     font-weight: 700;
     color: var(--gray-900);
     margin-bottom: var(--spacing-4);
@@ -677,11 +677,11 @@ body {
 }
 
 .award-badge i {
-    font-size: var(--font-size-2xl);
+    font-size: 0.9rem;
 }
 
 .award-badge span {
-    font-size: var(--font-size-sm);
+    font-size: 0.9rem;
     font-weight: 600;
 }
 
@@ -691,7 +691,7 @@ body {
 
 .award-details strong {
     color: var(--gray-900);
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: 0.9rem;
     font-weight: 600;
     display: block;
     margin-bottom: var(--spacing-2);
@@ -707,7 +707,7 @@ body {
     color: var(--primary-blue);
     text-decoration: none;
     font-weight: 500;
-    font-size: var(--font-size-sm);
+    font-size: 0.9rem;
     transition: color 0.2s ease;
 }
 
@@ -734,7 +734,7 @@ body {
     color: var(--gray-700);
     text-decoration: none;
     border-radius: 8px;
-    font-size: var(--font-size-sm);
+    font-size: 0.9rem;
     font-weight: 500;
     border: 1px solid var(--gray-700);
     min-width: 60px;
@@ -752,7 +752,7 @@ body {
 }
 
 .recognition-text {
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: 0.9rem;
     color: var(--gray-700);
     line-height: 1.5;
 }
@@ -793,7 +793,7 @@ body {
     color: var(--gray-800);
     text-decoration: none;
     border-radius: 8px;
-    font-size: var(--font-size-sm);
+    font-size: 0.9rem;
     font-weight: 600;
     border: 1px solid var(--gray-800);
     min-width: 80px;
@@ -808,7 +808,7 @@ body {
 }
 
 .media-title {
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--gray-900);
     margin-bottom: var(--spacing-1);
@@ -816,7 +816,7 @@ body {
 }
 
 .media-source {
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: 0.9rem;
     color: var(--gray-700);
     line-height: 1.5;
     margin-bottom: var(--spacing-1);
@@ -873,7 +873,7 @@ body {
 }
 
 .student-name-link {
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: 0.9rem;
     color: var(--gray-700);
     text-decoration: underline;
     text-underline-offset: 6px;
@@ -887,7 +887,7 @@ body {
 }
 
 .student-name-text {
-    font-size: calc(var(--font-size-lg) - 3px);
+    font-size: 0.9rem;
     color: var(--gray-700);
     text-decoration: underline;
     text-underline-offset: 6px;
@@ -902,14 +902,14 @@ body {
     background: var(--white);
     color: var(--gray-700);
     border-radius: 8px;
-    font-size: var(--font-size-sm);
+    font-size: 0.9rem;
     font-weight: 500;
     border: 1px solid var(--gray-700);
 }
 
 .student-affiliation {
     color: var(--gray-600);
-    font-size: calc(var(--font-size-lg) - 3px);
+    font-size: 0.9rem;
     font-style: italic;
 }
 
@@ -921,7 +921,7 @@ body {
 }
 
 .opportunities-title {
-    font-size: calc(var(--font-size-2xl) - 1px);
+    font-size: 0.9rem;
     font-weight: 700;
     color: var(--primary-blue);
     margin-bottom: var(--spacing-6);
@@ -935,7 +935,7 @@ body {
 
 .opportunities-areas h3 {
     color: var(--gray-900);
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: var(--spacing-3);
 }
@@ -972,7 +972,7 @@ body {
     color: var(--gray-600);
     line-height: 1.6;
     margin-top: var(--spacing-2);
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: 0.9rem;
 }
 
 .talk-description ul {
@@ -1013,15 +1013,15 @@ body {
     }
     
     .hero-title {
-        font-size: var(--font-size-2xl);
+        font-size: 0.9rem;
     }
     
     .section-title {
-        font-size: calc(var(--font-size-lg) - 1px);
+        font-size: 0.9rem;
     }
     
     .nav-link {
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: var(--spacing-1);
     }
     
@@ -1031,7 +1031,7 @@ body {
     
     .year-filter,
     .year-filter-media {
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: var(--spacing-1) var(--spacing-2);
     }
     
@@ -1042,13 +1042,13 @@ body {
     .about-text,
     .update-content,
     .update-date {
-        font-size: calc(var(--font-size-lg) - 2px);
+        font-size: 0.9rem;
     }
 }
 
 
 .bibliography {
-    font-size: calc(var(--font-size-xl) - 1px);
+    font-size: 1rem;
     font-weight: 600;
     color: var(--primary-blue);
     margin-bottom: var(--spacing-4);
@@ -1078,7 +1078,7 @@ body {
 }
 
 .publication-entry .publication-title {
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--gray-900);
     margin-bottom: var(--spacing-2);
@@ -1086,14 +1086,14 @@ body {
 }
 
 .publication-entry .publication-authors {
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: 0.9rem;
     color: var(--gray-700);
     margin-bottom: var(--spacing-1);
     line-height: 1.5;
 }
 
 .publication-entry .publication-venue {
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: 0.9rem;
     color: var(--primary-blue);
     font-weight: 500;
     margin-bottom: var(--spacing-3);
@@ -1113,7 +1113,7 @@ body {
 }
 
 .filter-label {
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: 1rem;
     font-weight: 600;
     color: var(--gray-700);
 }
@@ -1130,7 +1130,7 @@ body {
     color: var(--gray-700);
     border: 1px solid var(--gray-700);
     border-radius: 8px;
-    font-size: calc(var(--font-size-base) - 1px);
+    font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -1163,7 +1163,7 @@ body {
     color: var(--gray-700);
     border: 1px solid var(--gray-700);
     border-radius: 8px;
-    font-size: calc(var(--font-size-base) - 1px);
+    font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -1195,7 +1195,7 @@ body {
     color: var(--gray-700);
     text-decoration: none;
     border-radius: 8px;
-    font-size: var(--font-size-sm);
+    font-size: 0.9rem;
     font-weight: 500;
     transition: all 0.2s ease;
     border: 1px solid var(--gray-700);
@@ -1233,7 +1233,7 @@ body {
 }
 
 .venue-text {
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: 0.9rem;
     color: var(--gray-900);
     line-height: 1.5;
     font-weight: 500;
@@ -1252,7 +1252,7 @@ body {
     color: var(--gray-700);
     text-decoration: none;
     border-radius: 8px;
-    font-size: var(--font-size-sm);
+    font-size: 0.9rem;
     font-weight: 500;
     transition: all 0.2s ease;
     border: 1px solid var(--gray-700);
@@ -1303,7 +1303,7 @@ body {
     color: var(--gray-1000);
     text-decoration: none;
     border-radius: 8px;
-    font-size: var(--font-size-sm);
+    font-size: 0.9rem;
     font-weight: 600;
     font-style: bold;
     border: 1px solid var(--gray-800);
@@ -1319,7 +1319,7 @@ body {
 }
 
 .talk-title {
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--gray-900);
     
@@ -1335,7 +1335,7 @@ body {
 }
 
 .talk-venue {
-    font-size: calc(var(--font-size-lg) - 2px);
+    font-size: 0.9rem;
     color: var(--primary-blue);
     font-weight: 500;
     font-style: italic;
@@ -1364,6 +1364,6 @@ body {
     .talk-description,
     .venue-text,
     .award-details strong {
-        font-size: calc(var(--font-size-lg) - 3px) !important;
+        font-size: 0.9rem !important;
     }
 }
