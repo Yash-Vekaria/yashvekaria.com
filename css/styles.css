@@ -771,7 +771,8 @@ body {
     margin-top: var(--spacing-1);
 }
 
-.media-date {
+.media-date,
+.talk-date {
     display: inline-block;
     padding: var(--spacing-1) var(--spacing-2);
     background: var(--white);
@@ -1067,7 +1068,7 @@ body {
     font-weight: 600;
     font-style: italic;
     color: var(--gray-900);
-    margin-bottom: var(--spacing-2);
+    margin-bottom: var(--spacing-1);
     line-height: 1.4;
 }
 
@@ -1082,7 +1083,7 @@ body {
     font-size: 0.9rem;
     color: var(--primary-blue);
     font-weight: 500;
-    margin-bottom: var(--spacing-3);
+    margin-bottom: var(--spacing-1);
     font-style: italic;
 }
 
@@ -1269,7 +1270,7 @@ body {
 .talks-list {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-4);
+    gap: var(--spacing-2);
 }
 
 .talk-entry {
@@ -1280,24 +1281,6 @@ body {
 
 .talk-entry:last-child {
     border-bottom: none;
-}
-
-.talk-date {
-    display: inline-block;
-    padding: var(--spacing-1) var(--spacing-2);
-    background: var(--white);
-    color: var(--gray-1000);
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    font-style: bold;
-    border: 1px solid var(--gray-800);
-    min-width: 80px;
-    text-align: center;
-    flex-shrink: 0;
-    align-self: flex-start;
-    height: fit-content;
 }
 
 .talk-content {
