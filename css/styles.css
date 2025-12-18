@@ -111,8 +111,8 @@ body {
     margin-left: 95px;
     padding: var(--spacing-4) 0;
     background-color: var(--white);
-    border-top: 2px solid var(--primary-blue);
-    border-bottom: 2px solid var(--primary-blue);
+    border-top: 3px solid var(--primary-blue);
+    border-bottom: 3px solid var(--primary-blue);
     border-left: none;
     border-right: none;
     border-radius: 0;
@@ -1054,8 +1054,8 @@ body {
 
 .publication-entry {
     margin-bottom: var(--spacing-4);
-    padding-bottom: var(--spacing-4);
-    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: 0;
+    border-bottom: none;
 }
 
 .publication-entry:last-child {
