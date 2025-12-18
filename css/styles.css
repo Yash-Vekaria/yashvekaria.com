@@ -111,7 +111,8 @@ body {
 
 .header .container {
     max-width: 770px;
-    margin: 0 auto;
+    margin-left: 40px;
+    margin-right: auto;
     padding: var(--spacing-4) 0;
     background-color: var(--white);
     border-top: 3px solid var(--primary-blue);
@@ -314,7 +315,8 @@ body {
 .container {
     max-width: 800px;
     border-left: 0px;
-    margin: 0 auto;
+    margin-left: 40px;
+    margin-right: auto;
     padding: 0 var(--spacing-4);
 }
 
