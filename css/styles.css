@@ -804,14 +804,6 @@ body {
     height: fit-content;
 }
 
-.talk-date:hover {
-    background: var(--primary-blue);
-    color: var(--white);
-    border-color: var(--primary-blue);
-    transform: translateY(-1px);
-    box-shadow: 0 2px 4px rgba(0, 71, 171, 0.3);
-}
-
 .media-content {
     flex: 1;
 }
