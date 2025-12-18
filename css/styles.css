@@ -110,7 +110,7 @@ body {
 }
 
 .header .container {
-    max-width: 770px;
+    max-width: 800px;
     margin-left: 10px;
     margin-right: auto;
     padding: var(--spacing-4) 0;
@@ -317,7 +317,6 @@ body {
     border-left: 0px;
     margin-left: 10px;
     margin-right: auto;
-    padding: 0 var(--spacing-4);
 }
 
 
