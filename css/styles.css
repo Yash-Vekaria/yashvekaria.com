@@ -1221,12 +1221,10 @@ body {
 }
 
 .service-entry {
-    margin-bottom: var(--spacing-8);
 }
 
 .service-entry:last-child {
     border-bottom: none;
-    margin-bottom: 0;
 }
 
 .impact-entry {
@@ -1236,7 +1234,14 @@ body {
 }
 
 .impact-entry:last-child {
-    margin-bottom: 0;
+    border-bottom: 3px solid var(--primary-blue);
+}
+
+.impact-text {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--gray-700);
+    margin-bottom: var(--spacing-2);
 }
 
 .service-venue {
