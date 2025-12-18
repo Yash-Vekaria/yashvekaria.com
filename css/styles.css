@@ -108,7 +108,7 @@ body {
 
 .header .container {
     max-width: 770px;
-    margin-left: 95px;
+    margin: 0 auto;
     padding: var(--spacing-4) 0;
     background-color: var(--white);
     border-top: 3px solid var(--primary-blue);
@@ -789,6 +789,14 @@ body {
     height: fit-content;
 }
 
+.talk-date:hover {
+    background: var(--primary-blue);
+    color: var(--white);
+    border-color: var(--primary-blue);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 71, 171, 0.3);
+}
+
 .media-content {
     flex: 1;
 }
@@ -1065,8 +1073,7 @@ body {
 
 .publication-entry .publication-title {
     font-size: 0.9rem;
-    font-weight: 600;
-    font-style: italic;
+    font-weight: 700;
     color: var(--gray-900);
     margin-bottom: var(--spacing-1);
     line-height: 1.4;
@@ -1172,7 +1179,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing-2);
-    margin-top: var(--spacing-3);
+    margin-top: var(--spacing-1);
 }
 
 .links .pub-link {
