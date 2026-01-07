@@ -797,7 +797,7 @@ body {
     font-size: 0.9rem;
     font-weight: 500;
     border: 1px solid var(--gray-800);
-    min-width: 80px;
+    min-width: 88px;
     text-align: center;
     flex-shrink: 0;
     align-self: flex-start;
