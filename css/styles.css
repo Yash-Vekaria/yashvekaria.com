@@ -473,7 +473,7 @@ body {
     color: var(--gray-700);
     font-size: 0.9rem;
     font-size: bold;
-    min-width: 100px;
+    width: 112px;
     flex-shrink: 0;
 }
 
@@ -568,7 +568,7 @@ body {
     }
     
     .update-date {
-        min-width: auto;
+        width: 112px;
     }
     
     .publication-venue {
