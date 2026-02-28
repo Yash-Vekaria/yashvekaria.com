@@ -1234,8 +1234,8 @@ body {
 }
 
 .impact-title {
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 0.9rem;
+    font-weight: 600;
     color: var(--gray-800);
     margin-bottom: var(--spacing-1);
 }
