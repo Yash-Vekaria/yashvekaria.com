@@ -1191,7 +1191,8 @@ body {
 
 .links .pub-link {
     display: inline-block;
-    padding: var(--spacing-1) var(--spacing-2);
+    /* padding: var(--spacing-1) var(--spacing-2); */
+    padding: 0.5px 4px;
     background: var(--white);
     color: var(--gray-700);
     text-decoration: none;
