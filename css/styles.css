@@ -1069,9 +1069,14 @@ body {
 }
 
 .publication-entry {
-    margin-bottom: var(--spacing-4);
-    padding-bottom: 0;
-    border-bottom: none;
+    /* margin-bottom: var(--spacing-4); */
+    /* padding-bottom: 0;
+    border-bottom: none; */
+    padding: 10px 0px;
+    /* light gray separator */
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(229, 231, 235);
 }
 
 .publication-entry:last-child {
