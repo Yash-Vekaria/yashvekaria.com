@@ -1272,9 +1272,9 @@ body {
 
 .service-link {
 	font-size: 0.9rem;
-    color: var(--gray-900);
+    color: var(--gray-700);
     line-height: 1.4;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: underline;
     text-underline-offset: 6px;
     text-decoration-color: var(--primary-blue);
