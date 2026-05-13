@@ -1265,7 +1265,6 @@ body {
 .service-venue {
     display: flex;
     align-items: center;
-    gap: var(--spacing-2);
     margin-bottom: var(--spacing-2);
     flex-wrap: wrap;
     justify-content: flex-start;
