@@ -1098,6 +1098,39 @@ body {
     line-height: 1.4;
 }
 
+.publication-mark-legend {
+    font-size: 0.9rem;
+    color: var(--gray-700);
+    margin-bottom: var(--spacing-8);
+    line-height: 1.6;
+}
+
+sup.pub-mark {
+    color: var(--primary-blue);
+}
+
+sup.pub-mark-circled {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    line-height: 1;
+}
+
+sup.pub-mark-circled::before {
+    content: '';
+    position: absolute;
+    width: 1.35em;
+    height: 1.35em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--primary-blue);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
 .publication-entry .publication-venue {
     font-size: 0.9rem;
     color: var(--primary-blue);
