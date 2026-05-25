@@ -452,11 +452,21 @@ body {
 }
 
 .job-market-banner {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
     background-color: var(--primary-blue);
-    border: 2px solid var(--primary-blue);
+    border: 2px solid #000000;
     border-radius: var(--radius-sm);
-    padding: calc(var(--spacing-4) * 0.7) var(--spacing-5);
+    padding: calc(var(--spacing-4) * 0.3) var(--spacing-5) calc(var(--spacing-4) * 0.3) var(--spacing-2);
     margin-bottom: var(--spacing-6);
+}
+
+.job-market-banner-icon {
+    color: var(--white);
+    font-size: 1.15rem;
+    line-height: 1;
+    flex-shrink: 0;
 }
 
 .job-market-banner-text {
