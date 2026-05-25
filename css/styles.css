@@ -1110,28 +1110,25 @@ sup.pub-mark {
 }
 
 sup.pub-mark-circled {
-    display: inline-block;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    line-height: 1;
+}
+
+sup.pub-mark-circled::before {
+    content: '';
+    position: absolute;
     width: 1.35em;
     height: 1.35em;
-    min-width: 1.35em;
-    min-height: 1.35em;
-    max-width: 1.35em;
-    max-height: 1.35em;
-    aspect-ratio: 1 / 1;
-    padding: 0;
-    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: 1px solid var(--primary-blue);
     border-radius: 50%;
-    color: var(--primary-blue);
-    font-weight: 700;
-    font-size: smaller;
-    line-height: 1.35em;
-    text-align: center;
-    vertical-align: super;
     box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    flex: none;
-    flex-shrink: 0;
 }
 
 .publication-entry .publication-venue {
