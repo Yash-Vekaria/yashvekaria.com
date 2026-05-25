@@ -451,6 +451,23 @@ body {
     margin-bottom: var(--spacing-4);
 }
 
+.job-market-banner {
+    background-color: var(--very-light-blue);
+    border: 2px solid var(--primary-blue);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-4) var(--spacing-5);
+    margin-bottom: var(--spacing-8);
+}
+
+.job-market-banner-text {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--primary-blue);
+    font-style: italic;
+    font-weight: 500;
+}
+
 
 .updates {
     margin-bottom: var(--spacing-10);
