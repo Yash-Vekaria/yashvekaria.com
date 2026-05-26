@@ -451,7 +451,7 @@ body {
     margin-bottom: var(--spacing-4);
 }
 
-.job-market-banner {
+.important-announcement-banner {
     display: flex;
     align-items: center;
     gap: var(--spacing-3);
@@ -462,20 +462,20 @@ body {
     margin-bottom: var(--spacing-6);
 }
 
-.job-market-banner-icon {
+.important-announcement-icon {
     color: var(--white);
     font-size: 1.15rem;
     line-height: 1;
     flex-shrink: 0;
 }
 
-.job-market-banner-text {
+.important-announcement-text {
     margin: 0;
     font-size: 0.9rem;
     line-height: 1.05;
     color: var(--white);
     /* font-style: italic; */
-    font-weight: 700;
+    font-weight: 400;
 }
 
 
