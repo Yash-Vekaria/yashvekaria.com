@@ -474,7 +474,7 @@ body {
     font-size: 0.9rem;
     line-height: 1.05;
     color: var(--white);
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 700;
 }
 
