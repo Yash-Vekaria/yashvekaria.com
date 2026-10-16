@@ -40,3 +40,6 @@ temp/
 docs/
 img/profile-picture.*
 
+
+# Local-only notes (e.g., archived homepage bios)
+*-bio.txt

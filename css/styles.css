@@ -1169,6 +1169,14 @@ sup.pub-mark-circled::before {
     font-weight: 700;
 }
 
+.publication-entry .publication-note {
+    font-size: 0.9rem;
+    color: #c0392b;
+    font-weight: 500;
+    margin-bottom: var(--spacing-1);
+    font-style: italic;
+}
+
 .publication-filters {
     display: flex;
     align-items: center;
@@ -1449,6 +1457,7 @@ sup.pub-mark-circled::before {
     .publication-entry .publication-title,
     .publication-entry .publication-authors,
     .publication-entry .publication-venue,
+    .publication-entry .publication-note,
     .recognition-text,
     .media-title,
     .media-source,
