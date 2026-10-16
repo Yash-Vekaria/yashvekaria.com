@@ -1327,12 +1327,13 @@ sup.pub-mark-circled::before {
     margin: 0 0 var(--spacing-3);
 }
 
-/* One row per category: bold label, then wrapping pub-link buttons */
+/* One row per category: bold label, then pub-link buttons right after it */
 .impact-row {
-    display: grid;
-    grid-template-columns: 13rem minmax(0, 1fr);
-    column-gap: var(--spacing-3);
+    display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
+    column-gap: 0.35em;
+    row-gap: var(--spacing-1);
     padding-left: var(--spacing-3);
     border-left: 2px solid var(--primary-blue);
     margin-bottom: var(--spacing-2);
@@ -1342,21 +1343,25 @@ sup.pub-mark-circled::before {
     margin-bottom: 0;
 }
 
+/* Matches .impact-title */
 .impact-label {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--gray-800);
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--gray-700);
 }
 
+/* Buttons wrap under the first button; drop below the label only when too narrow */
 .impact-row .links {
+    flex: 1 1 12rem;
+    min-width: 0;
     margin-top: 0;
     gap: var(--spacing-1) var(--spacing-2);
 }
 
+/* On phones, flow buttons inline after the label and wrap to the left edge */
 @media (max-width: 600px) {
-    .impact-row {
-        grid-template-columns: minmax(0, 1fr);
-        row-gap: var(--spacing-1);
+    .impact-row .links {
+        display: contents;
     }
 }
 
