@@ -1303,6 +1303,7 @@ sup.pub-mark-circled::before {
 /* Impact items: one soft panel per item */
 .impact-entry {
     background: var(--gray-50);
+    border: 1px solid var(--primary-blue);
     border-radius: var(--radius-md);
     padding: var(--spacing-4) var(--spacing-5);
     margin-bottom: 14px;
@@ -1339,6 +1340,12 @@ sup.pub-mark-circled::before {
     margin-bottom: 0;
 }
 
+/* Thin navy rule between consecutive rows */
+.impact-row + .impact-row {
+    border-top: 1px solid var(--primary-blue);
+    padding-top: 6px;
+}
+
 .impact-label {
     font-size: 0.85rem;
     font-weight: 700;
@@ -1348,25 +1355,6 @@ sup.pub-mark-circled::before {
 .impact-row .links {
     margin-top: 0;
     gap: 6px;
-}
-
-/* Soft chips, scoped to impact panels so publications.html buttons are unchanged */
-.impact-row .links .pub-link {
-    background: var(--white);
-    color: var(--gray-800);
-    border: 1px solid var(--gray-300);
-    border-radius: 5px;
-    padding: 2px 9px;
-    font-size: 0.8rem;
-    line-height: 1.4;
-}
-
-.impact-row .links .pub-link:hover {
-    background: var(--white);
-    color: var(--primary-blue);
-    border-color: var(--gray-400);
-    transform: none;
-    box-shadow: none;
 }
 
 @media (max-width: 640px) {
