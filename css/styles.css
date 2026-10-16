@@ -1340,9 +1340,9 @@ sup.pub-mark-circled::before {
     margin-bottom: 0;
 }
 
-/* Thin navy rule between consecutive rows */
+/* Thin light-gray rule between consecutive rows */
 .impact-row + .impact-row {
-    border-top: 1px solid var(--primary-blue);
+    border-top: 1px solid var(--gray-200);
     padding-top: 6px;
 }
 
@@ -1355,6 +1355,10 @@ sup.pub-mark-circled::before {
 .impact-row .links {
     margin-top: 0;
     gap: 6px;
+}
+
+.impact-row .links .pub-link {
+    font-size: 0.76rem;
 }
 
 @media (max-width: 640px) {
