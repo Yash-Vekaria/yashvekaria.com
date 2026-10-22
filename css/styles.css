@@ -1332,7 +1332,7 @@ sup.pub-mark-circled::before {
 /* One row per category: fixed label column, chips beside it */
 .impact-row {
     display: grid;
-    grid-template-columns: 150px minmax(0, 1fr);
+    grid-template-columns: 185px minmax(0, 1fr);
     column-gap: var(--spacing-3);
     align-items: baseline;
     margin-bottom: 6px;
