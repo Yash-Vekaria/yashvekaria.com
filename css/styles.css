@@ -478,23 +478,24 @@ body {
 }
 
 /* Quieter secondary note shown below the job market banner */
-.important-announcement-banner:has(+ .student-announcement) {
-    margin-bottom: 12px;
+.important-announcement-banner:has(+ .student-note) {
+    margin-bottom: 0;
 }
 
-.student-announcement {
-    background-color: #f1f4fb;
-    border-left: 4px solid var(--primary-blue);
-    border-radius: 0;
+.student-note {
+    margin: 12px 0 var(--spacing-6);
     padding: 9px 16px;
-    margin-bottom: var(--spacing-6);
+    border-left: 4px solid var(--primary-blue);
+    background: #f1f4fb;
+    border-radius: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--gray-700);
 }
 
-.student-announcement-text {
-    margin: 0;
-    font-size: 0.85rem;
-    line-height: 1.5;
-    color: var(--gray-800);
+.student-note strong {
+    display: block;
+    font-weight: 600;
 }
 
 
