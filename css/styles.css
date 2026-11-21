@@ -630,6 +630,10 @@ body {
         align-items: flex-start;
         gap: var(--spacing-3);
     }
+
+    .publication-filters .publication-mark-legend {
+        margin-left: 0;
+    }
     
     .year-filters {
         width: 100%;
@@ -1151,6 +1155,12 @@ body {
     color: var(--gray-700);
     margin-bottom: var(--spacing-8);
     line-height: 1.6;
+}
+
+/* Legend sits on the year-filter row, pushed to the right */
+.publication-filters .publication-mark-legend {
+    margin-left: auto;
+    margin-bottom: 0;
 }
 
 sup.pub-mark {
