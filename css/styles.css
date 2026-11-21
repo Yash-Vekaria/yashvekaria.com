@@ -624,15 +624,10 @@ body {
         gap: var(--spacing-2);
     }
     
-    .publication-filters,
     .media-coverage-filters {
         flex-direction: column;
         align-items: flex-start;
         gap: var(--spacing-3);
-    }
-
-    .publication-filters .publication-mark-legend {
-        margin-left: 0;
     }
     
     .year-filters {
@@ -1161,6 +1156,24 @@ body {
 .publication-filters .publication-mark-legend {
     margin-left: auto;
     margin-bottom: 0;
+}
+
+/* Keep the year buttons from taking the full row, so the legend fits beside them */
+.publication-filters .year-filters {
+    width: auto;
+}
+
+/* Stack the legend under the year filter only on narrow screens */
+@media (max-width: 640px) {
+    .publication-filters {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-3);
+    }
+
+    .publication-filters .publication-mark-legend {
+        margin-left: 0;
+    }
 }
 
 sup.pub-mark {
