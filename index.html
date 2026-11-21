@@ -26,7 +26,7 @@
     <link rel="canonical" href="https://www.yashvekaria.com/">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
-    <link rel="stylesheet" href="css/styles.css?v=20261120">
+    <link rel="stylesheet" href="css/styles.css?v=20261121">
     <link rel="stylesheet" href="css/sidebar.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -176,72 +176,53 @@
             <section class="updates">
                 <!-- <h3 class="section-title">Recent Updates</h3> -->
                 <h2 class="bibliography">Recent Updates</h2>
+                <!-- One block per update: date, category (award | impact | paper | talk), text.
+                     Add a new <p class="updates-year"> label whenever the year changes. -->
                 <div class="updates-list">
-                    <div class="update-item">
-                        <div class="update-date">Nov 20</div>
-                        <div class="update-content">
-                            Selected as a <a href="https://risingstars.cs.washington.edu" class="update-link">Rising Star in EECS 2026-2027</a> hosted by <a href="https://risingstars.cs.washington.edu" class="update-link">University of Washington</a>.
-                        </div>
+                    <p class="updates-year">2026</p>
+                    <div class="update-entry">
+                        <p class="update-meta">Nov 20<span class="update-cat update-cat-award">Award</span></p>
+                        <div class="update-body"><p class="update-text">Selected as a <a href="https://risingstars.cs.washington.edu" class="update-link">Rising Star in EECS 2026-2027</a> hosted by <a href="https://risingstars.cs.washington.edu" class="update-link">University of Washington</a>.</p></div>
                     </div>
-                    <div class="update-item">
-                        <div class="update-date">Nov 18</div>
-                        <div class="update-content">
-                            Honored for our <a href="https://arxiv.org/pdf/2603.12498" class="update-link">API leaks work</a> to have received <a href="files/ccs26-distinguished-paper-award.pdf" class="update-link">Distinguished Paper Award</a> at <a href="https://www.sigsac.org/ccs/CCS2026/program/awards.html" class="update-link">CCS 2026</a>.
-                        </div>
+                    <div class="update-entry">
+                        <p class="update-meta">Nov 18<span class="update-cat update-cat-award">Award</span></p>
+                        <div class="update-body"><p class="update-text">Honored for our <a href="https://arxiv.org/pdf/2603.12498" class="update-link">API leaks work</a> to have received <a href="files/ccs26-distinguished-paper-award.pdf" class="update-link">Distinguished Paper Award</a> at <a href="https://www.sigsac.org/ccs/CCS2026/program/awards.html" class="update-link">CCS 2026</a>.</p></div>
                     </div>
-                    <div class="update-item">
-                        <div class="update-date">Nov 08</div>
-                        <div class="update-content">
-                            My <a href="https://arxiv.org/pdf/2604.27497" class="update-link">research</a> led to filter rules being added to EasyPrivacy (Issues: <a href="https://github.com/easylist/easylist/issues/26290" class="update-link">#26290</a>, <a href="https://github.com/easylist/easylist/issues/26353" class="update-link">#26353</a>).
-                        </div>
+                    <div class="update-entry">
+                        <p class="update-meta">Nov 08<span class="update-cat update-cat-impact">Impact</span></p>
+                        <div class="update-body"><p class="update-text">My <a href="https://arxiv.org/pdf/2604.27497" class="update-link">research</a> led to filter rules being added to EasyPrivacy (Issues: <a href="https://github.com/easylist/easylist/issues/26290" class="update-link">#26290</a>, <a href="https://github.com/easylist/easylist/issues/26353" class="update-link">#26353</a>).</p></div>
                     </div>
-                    <div class="update-item">
-                        <div class="update-date">Nov 05</div>
-                        <div class="update-content">
-                            My <a href="https://dl.acm.org/doi/10.1145/3646547.3689013" class="update-link">Smart TV ACR research</a> got cited by <a href="http://cppa.ca.gov/meetings/materials/20261105_06_05.pdf" class="update-link">CPPA</a> in its legislative proposal to its board.
-                        </div>
+                    <div class="update-entry">
+                        <p class="update-meta">Nov 05<span class="update-cat update-cat-impact">Impact</span></p>
+                        <div class="update-body"><p class="update-text">My <a href="https://dl.acm.org/doi/10.1145/3646547.3689013" class="update-link">Smart TV ACR research</a> got cited by <a href="http://cppa.ca.gov/meetings/materials/20261105_06_05.pdf" class="update-link">CPPA</a> in its legislative proposal to its board.</p></div>
                     </div>
-                    <div class="update-item">
-                        <div class="update-date">Oct 13</div>
-                        <div class="update-content">
-                            My <a href="https://www.computer.org/csdl/proceedings-article/sp/2026/606500c752/2geEWuSJFHW" class="update-link">spam work</a> was selected as a finalist at <a href="https://mlab.cyber.nyu.edu/csaw/" class="update-link">CSAW Applied Research Competition 2026</a>.
-                        </div>
+                    <div class="update-entry">
+                        <p class="update-meta">Oct 13<span class="update-cat update-cat-award">Award</span></p>
+                        <div class="update-body"><p class="update-text">My <a href="https://www.computer.org/csdl/proceedings-article/sp/2026/606500c752/2geEWuSJFHW" class="update-link">spam work</a> was selected as a finalist at <a href="https://mlab.cyber.nyu.edu/csaw/" class="update-link">CSAW Applied Research Competition 2026</a>.</p></div>
                     </div>
-                    <div class="update-item">
-                        <div class="update-date">Jul 18</div>
-                        <div class="update-content">
-                            My paper on API credential leaks on the web was accepted at <a href="https://www.sigsac.org/ccs/CCS2026/" class="update-link">ACM CCS 2026</a>.
-                        </div>
+                    <div class="update-entry">
+                        <p class="update-meta">Jul 18<span class="update-cat update-cat-paper">Paper</span></p>
+                        <div class="update-body"><p class="update-text">My paper on API credential leaks on the web was accepted at <a href="https://www.sigsac.org/ccs/CCS2026/" class="update-link">ACM CCS 2026</a>.</p></div>
                     </div>
-                    <div class="update-item">
-                        <div class="update-date">Mar 27</div>
-                        <div class="update-content">
-                            I was invited to present my research at University of Iowa as part of their <a href="https://cs.uiowa.edu/event/36919/0" class="update-link">Rising Stars in CS Colloquium</a>.
-                        </div>
+                    <div class="update-entry">
+                        <p class="update-meta">Mar 27<span class="update-cat update-cat-talk">Talk</span></p>
+                        <div class="update-body"><p class="update-text">I was invited to present my research at University of Iowa as part of their <a href="https://cs.uiowa.edu/event/36919/0" class="update-link">Rising Stars in CS Colloquium</a>.</p></div>
                     </div>
-                    <div class="update-item">
-                        <div class="update-date">Mar 20</div>
-                        <div class="update-content">
-                            I presented my research on data brokerage and spam in lead marketing to economists, technologists, and policymakers at the <a href="https://www.ftc.gov/news-events/events/2026/03/third-federal-trade-commission-conference-marketing-public-policy" class="update-link">Federal Trade Commission</a> in Washington D.C. This work is also accepted to <a href="https://sp2026.ieee-security.org/accepted-papers.html" class="update-link">IEEE S&P 2026</a>!
-                        </div>
+                    <div class="update-entry">
+                        <p class="update-meta">Mar 20<span class="update-cat update-cat-talk">Talk</span></p>
+                        <div class="update-body"><p class="update-text">I presented my research on data brokerage and spam in lead marketing to economists, technologists, and policymakers at the <a href="https://www.ftc.gov/news-events/events/2026/03/third-federal-trade-commission-conference-marketing-public-policy" class="update-link">Federal Trade Commission</a> in Washington D.C. This work is also accepted to <a href="https://sp2026.ieee-security.org/accepted-papers.html" class="update-link">IEEE S&P 2026</a>!</p></div>
                     </div>
-                    <div class="update-item">
-                        <div class="update-date">Feb 24</div>
-                        <div class="update-content">
-                            I presented my poster on Memory at the <a href="https://ucnoyce.org/events/uc-noyce-initiative-research-symposium-uc-davis" class="update-link">UC Noyce Initiative Research Symposium</a> at UC Davis.
-                        </div>
+                    <div class="update-entry">
+                        <p class="update-meta">Feb 24<span class="update-cat update-cat-talk">Talk</span></p>
+                        <div class="update-body"><p class="update-text">I presented my poster on Memory at the <a href="https://ucnoyce.org/events/uc-noyce-initiative-research-symposium-uc-davis" class="update-link">UC Noyce Initiative Research Symposium</a> at UC Davis.</p></div>
                     </div>
-                    <div class="update-item">
-                        <div class="update-date">Feb 20</div>
-                        <div class="update-content">
-                            I gave a talk on Memory and Personalization in LLMs at Workshop on Design, Advertising, and Privacy in Conversational AI Systems at <a href="https://citris-uc.org/research/citris-tech-policy/" class="update-link">CITRIS Tech Policy</a>, UC Berkeley.
-                        </div>
+                    <div class="update-entry">
+                        <p class="update-meta">Feb 20<span class="update-cat update-cat-talk">Talk</span></p>
+                        <div class="update-body"><p class="update-text">I gave a talk on Memory and Personalization in LLMs at Workshop on Design, Advertising, and Privacy in Conversational AI Systems at <a href="https://citris-uc.org/research/citris-tech-policy/" class="update-link">CITRIS Tech Policy</a>, UC Berkeley.</p></div>
                     </div>
-                    <div class="update-item">
-                        <div class="update-date">Feb 04</div>
-                        <div class="update-content">
-                            My work on reverse-engineering Meta's tracking pixel configurations got accepted at <a href="https://conferences.sigcomm.org/imc/2026/" class="update-link">IMC 2026</a>.
-                        </div>
+                    <div class="update-entry">
+                        <p class="update-meta">Feb 04<span class="update-cat update-cat-paper">Paper</span></p>
+                        <div class="update-body"><p class="update-text">My work on reverse-engineering Meta's tracking pixel configurations got accepted at <a href="https://conferences.sigcomm.org/imc/2026/" class="update-link">IMC 2026</a>.</p></div>
                     </div>
                 </div>
             </section>
