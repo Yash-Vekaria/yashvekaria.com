@@ -549,7 +549,7 @@ body {
 .update-body {
     position: relative;
     margin-left: 16px;
-    padding: 0 0 14px 20px;
+    padding: 0 0 24px 20px;
     border-left: 2px solid #dbe3f5;
     min-height: 34px;
 }
