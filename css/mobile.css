@@ -523,15 +523,30 @@
         display: block;
     }
 
-    a.talk-date-inline {
-        color: inherit;
+    /* Invited talks: same scheme as awards, gray italic venue with a linked date */
+    .service-list .talk-venue {
+        color: var(--gray-600);
+        font-size: 15px !important;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    .talk-date-inline {
+        color: var(--gray-700);
+        font-style: normal;
         white-space: nowrap;
+    }
+
+    a.talk-date-inline {
         text-decoration: underline;
-        text-underline-offset: 3px;
+        text-underline-offset: 4px;
+        text-decoration-color: var(--primary-blue);
         text-decoration-thickness: 1.5px;
     }
 
-    span.talk-date-inline {
-        white-space: nowrap;
+    /* Teaching: role on its own line in the same gray */
+    .talk-role {
+        color: var(--gray-600);
+        font-weight: 400;
     }
 }
