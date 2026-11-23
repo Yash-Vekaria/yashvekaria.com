@@ -7,8 +7,14 @@
     }
 
     /* Wrapper used for the phone layout of service years; invisible to the desktop layout */
-    .service-years {
+    .service-years,
+    .service-group {
         display: contents;
+    }
+
+    /* The year follows the text in the source; the desktop layout shows it first */
+    .recognition-line > .recognition-year {
+        order: -1;
     }
 }
 
@@ -229,7 +235,6 @@
     .talk-venue,
     .talk-date,
     .talk-description,
-    .recognition-year,
     .student-years,
     .student-affiliation,
     .update-meta,
@@ -358,65 +363,90 @@
 
     /* ---------- Service ---------- */
 
+    /* Entry and its years flow as one line of text */
     .service-venue {
         display: block;
-        margin-bottom: 12px;
+        margin: 0;
+        padding: 10px 0;
+        line-height: 1.4;
     }
 
-    .venue-text {
-        display: block;
+    /* Same separator as between publications */
+    .service-entry + .service-entry > .service-venue,
+    .service-entry + .service-entry > .recognition-line {
+        border-top: 1px solid rgb(229, 231, 235);
     }
 
-    .service-paren,
-    .service-gap {
-        display: none;
-    }
-
-    /* Years on their own line: smaller, gray, comma-separated */
+    /* Moves to the next line as a unit when it fits there */
     .service-years {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-top: 2px;
-        font-size: 13.5px;
-        line-height: 1.5;
-        color: var(--gray-500);
+        display: inline-block;
+        max-width: 100%;
+        font-size: 15px;
+        line-height: 1.4;
     }
 
-    .service-years .service-link {
-        font-size: 13.5px;
-        color: var(--gray-500);
+    /* "(first year" and "last year)" never split; lines break only between years */
+    .service-group {
         white-space: nowrap;
     }
 
-    .service-sep {
-        white-space: pre;
+    .service-nbsp {
+        display: none;
     }
 
-    /* Award badge goes to the end of the years line */
+    .service-years .service-link {
+        font-size: 15px;
+    }
+
     .service-years .award-text {
-        order: 1;
-        margin-left: 8px;
+        vertical-align: 1px;
     }
 
-    /* ---------- Recognition ---------- */
+    /* ---------- Recognition: awards and fellowships ---------- */
 
-    /* Year chip in a fixed left column; name, institution and amount flow beside it */
     .recognition-line {
         display: block;
-        position: relative;
-        min-height: 28px;
-        margin: 0 0 10px;
-        padding: 3px 0 0 70px;
+        margin: 0;
+        padding: 10px 0;
+        line-height: 1.4;
     }
 
-    .recognition-year {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 58px;
+    /* Year as plain "(2027)" text at the end instead of a chip */
+    .recognition-year,
+    .recognition-year:hover {
+        display: inline;
         min-width: 0;
-        padding: 3px 0;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+        transform: none;
+        color: var(--gray-700);
+        font-size: 15px;
+        font-weight: 400;
+        white-space: nowrap;
+    }
+
+    a.recognition-year:not([href="#"]) {
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        text-decoration-color: var(--primary-blue);
+        text-decoration-thickness: 1.5px;
+    }
+
+    /* inline-block keeps the link underline off the parentheses */
+    .recognition-year::before,
+    .recognition-year::after {
+        display: inline-block;
+    }
+
+    .recognition-year::before {
+        content: "(";
+    }
+
+    .recognition-year::after {
+        content: ")";
     }
 
     .recognition-amount {
