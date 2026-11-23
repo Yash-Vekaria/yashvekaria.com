@@ -549,4 +549,32 @@
         color: var(--gray-600);
         font-weight: 400;
     }
+
+    /* "(Dec 2026)" after the talk title, in the regular gray text style */
+    .talk-date-wrap {
+        color: var(--gray-700);
+        font-weight: 400;
+        white-space: nowrap;
+    }
+
+    /* ---------- Media coverage: same year filter row as Publications ---------- */
+
+    .media-coverage-filters {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px 12px;
+        margin-bottom: 20px;
+    }
+
+    .media-coverage-filters .filter-label {
+        font-size: 15px;
+    }
+
+    .media-coverage-filters .year-filters {
+        width: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
 }
