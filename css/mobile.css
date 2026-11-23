@@ -471,7 +471,16 @@
     }
 
     .talks-list {
-        gap: 14px;
+        gap: 0;
+    }
+
+    .talk-entry {
+        padding: 10px 0;
+    }
+
+    /* Same separator as between publications */
+    .talk-entry + .talk-entry {
+        border-top: 1px solid rgb(229, 231, 235);
     }
 
     .talk-entry,
@@ -484,7 +493,7 @@
         color: inherit;
         white-space: nowrap;
         text-decoration: underline;
-        text-underline-offset: 6px;
+        text-underline-offset: 3px;
         text-decoration-thickness: 1.5px;
     }
 
