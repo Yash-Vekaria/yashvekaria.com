@@ -1,0 +1,440 @@
+/* Phone layout. Everything here is scoped by media query: the first block only
+   hides phone-only markup on wider screens, the second holds every phone rule. */
+
+@media (min-width: 701px) {
+    .mobile-only {
+        display: none !important;
+    }
+
+    /* Wrapper used for the phone layout of service years; invisible to the desktop layout */
+    .service-years {
+        display: contents;
+    }
+}
+
+@media (max-width: 700px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    /* Sticky nav needs ancestors that are not scroll containers */
+    body,
+    .main-content {
+        overflow-x: visible;
+        overflow-x: clip;
+    }
+
+    .main-content {
+        min-height: 0;
+    }
+
+    /* ---------- Profile header (replaces the slide-out sidebar) ---------- */
+
+    .sidebar-toggle,
+    .mobile-menu-toggle,
+    .sidebar-overlay {
+        display: none !important;
+    }
+
+    .sidebar,
+    .sidebar-toggle:checked ~ .sidebar,
+    .sidebar-toggle:not(:checked) ~ .sidebar {
+        position: static;
+        transform: none !important;
+        width: 100%;
+        height: auto;
+        padding: 16px 16px 14px;
+        overflow: visible;
+        box-shadow: none;
+        transition: none;
+        will-change: auto;
+    }
+
+    .sidebar-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        height: auto;
+        min-height: 112px;
+        padding: 0 0 0 110px;
+    }
+
+    /* Photo fills the full height of the text column beside it */
+    .sidebar .profile-photo {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 96px;
+        height: 100%;
+        margin: 0;
+        border-width: 2px;
+        border-radius: 12px;
+        box-shadow: none;
+        object-fit: cover;
+    }
+
+    .sidebar-name {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.25;
+        text-align: left;
+        margin-bottom: 2px;
+    }
+
+    .sidebar-title,
+    .affiliation-text {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.4;
+        text-align: left;
+        margin: 0;
+    }
+
+    .sidebar-separator {
+        display: none;
+    }
+
+    /* Icon-only link row pinned to the bottom of the header */
+    .sidebar-links {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 250px;
+        margin-top: auto;
+        padding-top: 12px;
+    }
+
+    .sidebar-links li {
+        margin: 0;
+    }
+
+    .sidebar-link {
+        width: auto;
+        padding: 2px;
+        font-size: 0;
+        justify-content: center;
+    }
+
+    .sidebar-link i {
+        width: auto;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    /* ---------- Sticky, horizontally scrollable nav ---------- */
+
+    .header {
+        position: sticky;
+        top: 0;
+        left: auto;
+        right: auto;
+        padding: 0;
+        z-index: 100;
+        transform: none;
+        will-change: auto;
+        background-color: var(--white);
+    }
+
+    .header .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 10px 0 0 16px;
+        border-top: none;
+        border-bottom: 3px solid var(--primary-blue);
+    }
+
+    .header .header-content {
+        margin-left: 0;
+        padding: 0 16px 10px 0;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .header .header-content::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-list {
+        gap: 22px;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding-right: 0;
+    }
+
+    .nav-link {
+        font-size: 15px;
+        padding: 2px 0;
+        white-space: nowrap;
+    }
+
+    .nav-link.active::after {
+        bottom: -7px;
+        height: 3px;
+    }
+
+    /* ---------- Page body ---------- */
+
+    .main {
+        padding-top: 18px;
+        margin-top: 0;
+    }
+
+    .container {
+        max-width: 100%;
+        margin-left: 0;
+        padding: 0 16px;
+    }
+
+    .service-section {
+        margin-top: 0;
+    }
+
+    .service-section .bibliography:first-of-type {
+        margin-top: 0 !important;
+    }
+
+    .students-section:first-of-type {
+        margin-top: 0;
+    }
+
+    /* ---------- Type sizes ---------- */
+
+    .about-text,
+    .update-text,
+    .impact-title,
+    .impact-text,
+    .recognition-text,
+    .venue-text,
+    .publication-entry .publication-title,
+    .media-title,
+    .talk-title,
+    .student-name-link,
+    .student-name-text {
+        font-size: 15px !important;
+    }
+
+    .publication-entry .publication-authors,
+    .publication-entry .publication-venue,
+    .publication-entry .publication-note,
+    .publication-mark-legend,
+    .media-source,
+    .media-date,
+    .talk-venue,
+    .talk-date,
+    .talk-description,
+    .recognition-year,
+    .student-years,
+    .student-affiliation,
+    .update-meta,
+    .impact-label {
+        font-size: 13.5px !important;
+    }
+
+    .bibliography {
+        font-size: 17px;
+    }
+
+    .update-link,
+    .media-link,
+    .service-link,
+    .student-name-link,
+    .student-name-text,
+    .project-link {
+        text-decoration-thickness: 1.5px;
+    }
+
+    /* ---------- Home ---------- */
+
+    .important-announcement-banner {
+        border: none;
+        padding: 8px 12px 8px 10px;
+        gap: 8px;
+    }
+
+    .important-announcement-text {
+        font-size: 14px;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+
+    /* Updates: date and category on one line above the text, timeline kept on the left */
+    .updates-year {
+        width: auto;
+        text-align: left;
+    }
+
+    .update-entry {
+        display: block;
+        position: relative;
+        margin-left: 4px;
+        padding: 0 0 18px 18px;
+        border-left: 2px solid #dbe3f5;
+    }
+
+    .update-entry:last-child {
+        padding-bottom: 4px;
+    }
+
+    .update-entry::before {
+        content: "";
+        position: absolute;
+        left: -6px;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--white);
+        border: 2px solid var(--primary-blue);
+        box-sizing: border-box;
+    }
+
+    .update-meta {
+        text-align: left;
+        line-height: 20px;
+    }
+
+    .update-cat {
+        display: inline;
+        margin: 0 0 0 8px;
+        font-size: 12.5px;
+        line-height: inherit;
+    }
+
+    .update-body {
+        margin: 2px 0 0;
+        padding: 0;
+        border-left: none;
+        min-height: 0;
+    }
+
+    .update-body::before {
+        display: none;
+    }
+
+    /* ---------- Publications ---------- */
+
+    .publication-filters {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px 12px;
+        margin-bottom: 20px;
+    }
+
+    .publication-filters .filter-label {
+        font-size: 15px;
+    }
+
+    .publication-filters .year-filters {
+        width: auto;
+        flex-wrap: nowrap;
+    }
+
+    .publication-filters .publication-mark-legend {
+        flex: 0 0 100%;
+        margin-left: 0;
+    }
+
+    /* Symbol column + text column, so both symbols line up with their text */
+    .publication-mark-legend > div {
+        display: grid;
+        grid-template-columns: 18px minmax(0, 1fr);
+        column-gap: 6px;
+        align-items: center;
+    }
+
+    .publication-mark-legend sup {
+        justify-self: center;
+        font-size: 12px;
+        line-height: 1;
+    }
+
+    /* ---------- Service ---------- */
+
+    .service-venue {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .venue-text {
+        display: block;
+    }
+
+    .service-paren,
+    .service-gap {
+        display: none;
+    }
+
+    /* Years on their own line: smaller, gray, comma-separated */
+    .service-years {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 2px;
+        font-size: 13.5px;
+        line-height: 1.5;
+        color: var(--gray-500);
+    }
+
+    .service-years .service-link {
+        font-size: 13.5px;
+        color: var(--gray-500);
+        white-space: nowrap;
+    }
+
+    .service-sep {
+        white-space: pre;
+    }
+
+    /* Award badge goes to the end of the years line */
+    .service-years .award-text {
+        order: 1;
+        margin-left: 8px;
+    }
+
+    /* ---------- Recognition ---------- */
+
+    /* Year chip in a fixed left column; name, institution and amount flow beside it */
+    .recognition-line {
+        display: block;
+        position: relative;
+        min-height: 28px;
+        margin: 0 0 10px;
+        padding: 3px 0 0 70px;
+    }
+
+    .recognition-year {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 58px;
+        min-width: 0;
+        padding: 3px 0;
+    }
+
+    .recognition-amount {
+        margin-left: 4px;
+        vertical-align: 1px;
+    }
+
+    .talk-entry,
+    .media-entry {
+        gap: 12px;
+    }
+
+    /* ---------- Date chips (talks, media) and course codes (teaching) ---------- */
+
+    .media-date,
+    .talk-date {
+        width: 78px;
+        min-width: 0;
+        padding: 3px 0;
+    }
+}
