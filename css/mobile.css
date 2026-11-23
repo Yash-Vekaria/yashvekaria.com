@@ -23,7 +23,6 @@
         display: none !important;
     }
 
-    /* Sticky nav needs ancestors that are not scroll containers */
     body,
     .main-content {
         overflow-x: visible;
@@ -34,7 +33,7 @@
         min-height: 0;
     }
 
-    /* ---------- Profile header (replaces the slide-out sidebar) ---------- */
+    /* ---------- Fixed header: icon row on top, nav tabs below ---------- */
 
     .sidebar-toggle,
     .mobile-menu-toggle,
@@ -42,75 +41,32 @@
         display: none !important;
     }
 
-    .sidebar,
-    .sidebar-toggle:checked ~ .sidebar,
-    .sidebar-toggle:not(:checked) ~ .sidebar {
-        position: static;
-        transform: none !important;
-        width: 100%;
-        height: auto;
-        padding: 16px 16px 14px;
-        overflow: visible;
-        box-shadow: none;
-        transition: none;
-        will-change: auto;
+    /* Room for the two fixed rows: 44px icons + 50px tabs */
+    body {
+        padding-top: 94px;
     }
 
-    .sidebar-content {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        height: auto;
-        min-height: 112px;
-        padding: 0 0 0 110px;
+    [id] {
+        scroll-margin-top: 106px;
     }
 
-    /* Photo fills the full height of the text column beside it */
-    .sidebar .profile-photo {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 96px;
-        height: 100%;
-        margin: 0;
-        border-width: 2px;
-        border-radius: 12px;
-        box-shadow: none;
-        object-fit: cover;
-    }
-
-    .sidebar-name {
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 1.25;
-        text-align: left;
-        margin-bottom: 2px;
-    }
-
-    .sidebar-title,
-    .affiliation-text {
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 1.4;
-        text-align: left;
-        margin: 0;
-    }
-
-    .sidebar-separator {
-        display: none;
-    }
-
-    /* Icon-only link row pinned to the bottom of the header */
+    /* Row 1: profile links, icon only */
     .sidebar-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 101;
+        box-sizing: border-box;
+        width: auto;
+        height: 44px;
+        margin: 0;
+        padding: 0 16px;
         flex-direction: row;
+        flex-wrap: nowrap;
         align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 250px;
-        margin-top: auto;
-        padding-top: 12px;
+        justify-content: space-evenly;
+        background-color: var(--white);
     }
 
     .sidebar-links li {
@@ -119,7 +75,7 @@
 
     .sidebar-link {
         width: auto;
-        padding: 2px;
+        padding: 6px;
         font-size: 0;
         justify-content: center;
     }
@@ -130,13 +86,13 @@
         font-size: 20px;
     }
 
-    /* ---------- Sticky, horizontally scrollable nav ---------- */
-
+    /* Row 2: horizontally scrollable nav tabs between two cobalt lines */
     .header {
-        position: sticky;
-        top: 0;
-        left: auto;
-        right: auto;
+        position: fixed;
+        top: 44px;
+        left: 0;
+        right: 0;
+        width: auto;
         padding: 0;
         z-index: 100;
         transform: none;
@@ -147,14 +103,17 @@
     .header .container {
         max-width: 100%;
         margin: 0;
-        padding: 10px 0 0 16px;
-        border-top: none;
+        padding: 0 0 0 16px;
+        border-top: 3px solid var(--primary-blue);
         border-bottom: 3px solid var(--primary-blue);
     }
 
     .header .header-content {
+        display: flex;
+        align-items: center;
+        height: 44px;
         margin-left: 0;
-        padding: 0 16px 10px 0;
+        padding: 0 16px 0 0;
         justify-content: flex-start;
         overflow-x: auto;
         overflow-y: hidden;
@@ -183,6 +142,89 @@
     .nav-link.active::after {
         bottom: -7px;
         height: 3px;
+    }
+
+    /* ---------- Profile block (scrolls with the page) ---------- */
+
+    .sidebar,
+    .sidebar-toggle:checked ~ .sidebar,
+    .sidebar-toggle:not(:checked) ~ .sidebar {
+        position: static;
+        transform: none !important;
+        width: 100%;
+        height: auto;
+        padding: 14px 16px 0;
+        overflow: visible;
+        box-shadow: none;
+        transition: none;
+        will-change: auto;
+    }
+
+    /* Compact: small photo on the left, name and title/affiliation beside it */
+    .sidebar-content {
+        display: grid;
+        grid-template-columns: 56px minmax(0, 1fr);
+        column-gap: 12px;
+        align-items: center;
+        height: auto;
+        padding: 0;
+    }
+
+    .sidebar .profile-photo {
+        grid-row: 1 / span 3;
+        width: 56px;
+        height: 56px;
+        margin: 0;
+        border-width: 2px;
+        border-radius: 10px;
+        box-shadow: none;
+        object-fit: cover;
+    }
+
+    .sidebar-name {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.25;
+        text-align: left;
+        margin: 0;
+    }
+
+    .sidebar-title,
+    .affiliation-text {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.35;
+        text-align: left;
+        margin: 0;
+    }
+
+    .sidebar-separator {
+        display: none;
+    }
+
+    /* Home: large centered photo with the name and title centered beneath */
+    .home .sidebar-content {
+        padding-top: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home .sidebar .profile-photo {
+        width: 60vw;
+        height: 60vw;
+        max-width: 320px;
+        max-height: 320px;
+        align-self: center;
+        margin-bottom: 12px;
+        border-width: 3px;
+        border-radius: 16px;
+    }
+
+    .home .sidebar-name,
+    .home .sidebar-title,
+    .home .affiliation-text {
+        text-align: center;
     }
 
     /* ---------- Page body ---------- */
