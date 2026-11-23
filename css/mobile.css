@@ -233,7 +233,6 @@
     .media-source,
     .media-date,
     .talk-venue,
-    .talk-date,
     .talk-description,
     .student-years,
     .student-affiliation,
@@ -437,13 +436,11 @@
 
     /* Two rows: title, then institution and year. inline-block keeps the
        link underline off the comma. */
-    .recognition-text strong,
-    .service-two-row .venue-text strong {
+    .recognition-text strong {
         display: block;
     }
 
-    .recognition-paren,
-    .service-two-row .service-paren {
+    .recognition-paren {
         display: none;
     }
 
@@ -452,30 +449,46 @@
         display: inline-block;
     }
 
-    .service-two-row .service-years {
-        display: inline;
-    }
-
-    .service-two-row .service-group:first-child::before {
-        content: ",\00a0";
-    }
-
     .recognition-amount {
         margin-left: 4px;
         vertical-align: 1px;
     }
 
-    .talk-entry,
     .media-entry {
         gap: 12px;
     }
 
-    /* ---------- Date chips (talks, media) and course codes (teaching) ---------- */
-
-    .media-date,
-    .talk-date {
+    .media-date {
         width: 78px;
         min-width: 0;
         padding: 3px 0;
+    }
+
+    /* ---------- Talks and teaching: no chip, text uses the full width ---------- */
+
+    .talk-date {
+        display: none;
+    }
+
+    .talks-list {
+        gap: 14px;
+    }
+
+    .talk-entry,
+    .talk-venue-container,
+    .talk-content {
+        display: block;
+    }
+
+    a.talk-date-inline {
+        color: inherit;
+        white-space: nowrap;
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        text-decoration-thickness: 1.5px;
+    }
+
+    span.talk-date-inline {
+        white-space: nowrap;
     }
 }
