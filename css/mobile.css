@@ -411,7 +411,7 @@
         line-height: 1.4;
     }
 
-    /* Year as plain "(2027)" text at the end instead of a chip */
+    /* Year as plain text after the institution instead of a chip */
     .recognition-year,
     .recognition-year:hover {
         display: inline;
@@ -435,18 +435,29 @@
         text-decoration-thickness: 1.5px;
     }
 
-    /* inline-block keeps the link underline off the parentheses */
-    .recognition-year::before,
-    .recognition-year::after {
-        display: inline-block;
+    /* Two rows: title, then institution and year. inline-block keeps the
+       link underline off the comma. */
+    .recognition-text strong,
+    .service-two-row .venue-text strong {
+        display: block;
+    }
+
+    .recognition-paren,
+    .service-two-row .service-paren {
+        display: none;
     }
 
     .recognition-year::before {
-        content: "(";
+        content: ",\00a0";
+        display: inline-block;
     }
 
-    .recognition-year::after {
-        content: ")";
+    .service-two-row .service-years {
+        display: inline;
+    }
+
+    .service-two-row .service-group:first-child::before {
+        content: ",\00a0";
     }
 
     .recognition-amount {
